@@ -1,0 +1,43 @@
+Adobe Photoshop CS5 Extended 12.0.4 x64
+Image > Image Size…
+	Pixel width: 300/600/1200
+	Pixel height: auto
+	Document width: auto
+	Document height: auto
+	Document resolution: 72 pixels/inch
+	✔ Scale Styles
+	✔ Constrain Proportions
+	✔ Resample Image: Bicubic Sharper (best for reduction)
+File > Save As…
+	Format: auto
+	Nothing checked
+	JPEG Options:
+		Quality: 6
+		Format: Baseline Optimized
+		Preview unchecked
+	PNG Options:
+		Interlace: None
+
+* Animated GIFs could not be saved this way
+Instead they were resized as above and saved with File > Save for Web & Devices…
+	GIF
+	Perceptual
+	Diffusion
+	✔ Transparency
+	Diffusion Transparency Dither
+	Not interlaced
+	Colors: 256
+	Dither: 100%
+	Matte: None
+	Amount: 100%
+	Web Snap: 0%
+	Lossy: 0
+	✔ Convert to sRGB
+	Preview: Use Document Profile
+	Metadata: None
+	Image width: auto
+	Image height: auto
+	Quality: Bicubic Sharper
+	Looping Options: Forever
+
+all output run through ImageOptim 3x

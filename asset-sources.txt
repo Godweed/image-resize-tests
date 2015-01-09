@@ -1,0 +1,90 @@
+2015-01-07
+google images
+labeled for reuse with modification
+start at "larger than 4MP" and work down until I get 3 images for each category
+some of the b&w ones weren't really b&w, so i skipped them
+skipped svgs
+
+each of the following types, from google image search:
+
+	1 face
+	2 photo
+	3 clip art
+	4 line drawing
+	5 animated
+
+each of the following colour types:
+
+	A full colour
+	B black and white
+	C transparent
+
+1A: http://upload.wikimedia.org/wikipedia/commons/6/67/Female_person_holds_snowy_owl_bird_bubo_scandiaca.jpg
+	http://upload.wikimedia.org/wikipedia/commons/7/79/Bill_Cameron_(author).jpg
+	http://upload.wikimedia.org/wikipedia/commons/f/f3/Kumail_Nanjiani_by_Gage_Skidmore.jpg
+
+1B: http://upload.wikimedia.org/wikipedia/commons/0/04/Axel_Munthe00.jpg
+	http://upload.wikimedia.org/wikipedia/commons/a/af/Ernest_Thompson_Seton.jpg
+	http://upload.wikimedia.org/wikipedia/commons/5/5a/JesseJackson.png
+
+1C:	http://upload.wikimedia.org/wikipedia/commons/a/a9/Pontiac_chief.png
+	http://pixabay.com/static/uploads/photo/2014/04/02/10/44/sun-304402_640.png
+	http://pixabay.com/static/uploads/photo/2014/04/03/10/54/lady-311672_640.png
+
+2A: http://upload.wikimedia.org/wikipedia/commons/2/23/Bubo_virginianus_06.jpg
+	http://upload.wikimedia.org/wikipedia/commons/b/b2/Bengalese_Eagle_Owl.jpg
+	http://upload.wikimedia.org/wikipedia/commons/4/4e/Lesser_Sooty_Owl_at_Bonadio's_Mabi_Wildlife_Reserve.jpg
+
+2B: http://upload.wikimedia.org/wikipedia/commons/7/7a/EFP_Bridge_over_Owl_Creek.jpg
+	http://upload.wikimedia.org/wikipedia/commons/f/fd/Indian_man_and_children_with_owl_and_kitten._-_NARA_-_297582.jpg
+	http://upload.wikimedia.org/wikipedia/commons/9/92/Great_Horned_owl_sitting_on_ground_-_NARA_-_283826.jpg
+
+2C:	http://upload.wikimedia.org/wikipedia/commons/9/93/Victoria_and_Albert_Christmas_Tree.png
+	http://upload.wikimedia.org/wikipedia/commons/a/a0/Sega-dreamcast-set.png
+	http://upload.wikimedia.org/wikipedia/commons/b/b5/Kepler_Space_Telescope.png
+
+3A: http://upload.wikimedia.org/wikipedia/commons/a/a9/Sinornithosaurus.jpg
+	http://upload.wikimedia.org/wikipedia/commons/8/87/LineartPresRev.png
+	http://upload.wikimedia.org/wikipedia/commons/f/f5/Morpho_marcus_MHNTdos.jpg
+
+3B:	http://upload.wikimedia.org/wikipedia/commons/7/7e/PS4-Console-wDS4.jpg
+	http://upload.wikimedia.org/wikipedia/commons/8/82/Tokyo_Sky_Tree_-_Silhouette_%26_Cross_section.jpg
+	https://c1.staticflickr.com/9/8046/8381767166_8987906b74_h.jpg
+
+3C:	http://upload.wikimedia.org/wikipedia/commons/e/e9/Fiordland_Penguin_distribution_map.png
+	http://upload.wikimedia.org/wikipedia/commons/4/4d/Iguana_iguana_distribution_map.png
+	http://upload.wikimedia.org/wikipedia/commons/5/51/Gulag_Location_Map.png
+
+4A:	http://upload.wikimedia.org/wikipedia/commons/b/ba/OWL-Verkehr2.png
+	http://upload.wikimedia.org/wikipedia/commons/6/6e/Vermont_quarter,_reverse_side,_2001.jpg
+	http://upload.wikimedia.org/wikipedia/commons/2/2c/River_Parrett_map.png
+
+4B:	http://upload.wikimedia.org/wikipedia/commons/2/20/Owl_(PSF).png
+	http://upload.wikimedia.org/wikipedia/commons/1/11/Investiturewoodcut.jpg
+	http://upload.wikimedia.org/wikipedia/commons/9/93/Illustrerad_Verldshistoria_band_II_Ill_008.png
+
+4C:	http://upload.wikimedia.org/wikipedia/commons/c/c7/Arms_of_the_Carey_family_of_Chilton_Foliat.png
+	http://upload.wikimedia.org/wikipedia/commons/f/f9/Tin_Woodman.png
+	http://upload.wikimedia.org/wikipedia/commons/2/2e/3dmarkers_sova_frame.png
+
+5A:	http://upload.wikimedia.org/wikipedia/commons/1/19/Noun_gender_distr_in_various_langs.gif
+	http://upload.wikimedia.org/wikipedia/commons/8/86/Arab_Spring_Protal.gif
+	http://upload.wikimedia.org/wikipedia/commons/4/46/Future_ozone_layer_concentrations.gif
+
+5B:	http://upload.wikimedia.org/wikipedia/commons/0/0e/Hard_reset_BBC_Micro_32K_Acorn_DFS.gif
+	http://upload.wikimedia.org/wikipedia/commons/e/e8/Newtons_cradle_animation_book.gif
+	http://upload.wikimedia.org/wikipedia/commons/2/21/Spinning_Dancer.gif
+
+5C:	http://fc07.deviantart.net/fs70/f/2011/304/c/0/twilight_sparkle_walk_test_by_c_quel-d4eji0m.gif
+	http://fc07.deviantart.net/fs71/f/2010/062/1/7/Spinning_Smiley_Face_Ball_by_Weasel_Of_Death.gif
+	http://upload.wikimedia.org/wikipedia/commons/b/b3/MonthlyMeanT.gif
+
+As well as the top hit for any type, any color for each of the following sizes (that wasn't already included):
+
+Any size (6D):			http://upload.wikimedia.org/wikipedia/commons/3/39/Athene_noctua_(cropped).jpg
+Large (6E):				http://upload.wikimedia.org/wikipedia/commons/9/98/GreatHornedOwl-Wiki.jpg
+Medium (6F):			http://upload.wikimedia.org/wikipedia/commons/f/f2/Snowy_Owl_-_Schnee-Eule.jpg
+Icon (6G):				http://upload.wikimedia.org/wikipedia/commons/2/20/Owlhead.jpg
+
+optimized with imageoptim 1.5.4-yosemite
+(3 rounds)
