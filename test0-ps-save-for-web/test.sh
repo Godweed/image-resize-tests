@@ -1,4 +1,16 @@
 #!/bin/bash
+
+
+# setup dir/structure
+echo "# Test 0: Photoshop CC 2014 vs Photoshop CS 5" > conclusions.md
+
+
+# optimize
+imageoptim -d . -q
+imageoptim -d . -q
+imageoptim -d . -q
+
+
 # calculate file sizes
 echo "Filename	Size" > ./filesize.tsv
 ls -l */*.jpg */*.png | grep -v "^total|^d"|awk '{print $NF"\t"$5 }' >> ./filesize.tsv
