@@ -1,0 +1,66 @@
+Adobe Photoshop CS5 Extended 12.0.4 x64
+File > Save for Web & Devices…
+	GIF
+		GIF
+
+		Perceptual
+		Diffusion
+		✔ Transparency
+		Diffusion Transparency Dither
+		x Interlaced
+
+		Colors: 256
+		Dither: 100%
+		Matte: None
+		Amount: 100%
+		Web Snap: 0%
+		Lossy: 0
+
+		✔ Convert to sRGB
+		Preview: Use Document Profile
+		Metadata: None
+
+		W: 300/600/1200
+		H: auto
+		Percent: auto
+		Quality: Bicubic Sharper
+
+		Looping Options: Forever
+
+	JPEG
+		JPEG
+
+		High
+		x Progressive
+		✔ Optimized
+		x Embed Color Profile
+
+		Quality: 60
+		Blur: 0
+		Matte: None
+
+		✔ Convert to sRGB
+		Preview: Use Document Profile
+		Metadata: None
+
+		W: 300/600/1200
+		H: auto
+		Percent: auto
+		Quality: Bicubic Sharper
+
+	PNG
+		PNG-24
+
+		✔ Transparency
+		x Interlaced
+
+		✔ Convert to sRGB
+		Preview: Use Document Profile
+		Metadata: None
+
+		W: 300/600/1200
+		H: auto
+		Percent: auto
+		Quality: Bicubic Sharper
+
+all output run through ImageOptim 3x
