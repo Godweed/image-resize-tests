@@ -1,7 +1,5 @@
 # Test 15: interpolation setting
 
-* I’m shocked that the DSSIM scores are identical across the board. I’m guessing either something is wrong with my test, or interpolate just doesn’t play that big a role when shrinking with `distort`
+* DSSIM scores are *very* similar for every setting, but `Average9` and `Average16` have a slight advantage.
 
-* There are small differences in file size, so I guess that’s what I’ll go on. Based on that, `Mesh` is the best option. `¯\_(ツ)_/¯`
-
-* I feel weird about this result.
+* `Background` has the smallest file size. Since the DSSIM scores are so similar, I’ll go with that.

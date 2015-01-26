@@ -2,8 +2,8 @@
 
 * Unsurprisingly, no difference in quality
 
-* Surprisingly, using `-strip` resulted in smaller files *even after optimizing*. Not a huge difference, but a difference nonetheless. So, we strip.
+* Surprisingly, not using `-strip` resulted in smaller files *even after optimizing*. Not a huge difference, but a difference nonetheless. So, we don’t strip.
 
 * I’m starting to suspect these small differences in file size are just noise; that sometimes the optimization works a little better than other times. :/
 
-* Even if that’s the case, I think using strip is a good idea, in case no optimization is performed afterwards.
+* In general, I think using strip is a good idea, in case no optimization is performed afterwards…

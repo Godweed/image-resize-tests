@@ -10,20 +10,20 @@
 
 * none–none is not the smallest at all; the ranking is:
 
-	* rgb-none	254,547.09
-	* srgb-srgb	254,550.03
-	* rgb-srgb	254,550.07
-	* srgb-none	254,550.77
-	* none-srgb	254,470.97
-	* none-none	255,358.51
-	* rgb-rgb	256,979.41
-	* srgb-rgb	256,979.70
-	* none-rgb	257,029.90
-	* luv-srgb	262,575.51
-	* luv-none	262,576.83
-	* lab-srgb	263,514.13
-	* lab-none	263,519.38
-	* luv-rgb	265,237.32
-	* lab-rgb	265,503.13
+	* none-srgb	254,318.03
+	* rgb-srgb	254,409.58
+	* srgb-srgb	254,410.93
+	* srgb-none	254,411.72
+	* rgb-none	254,414.04
+	* none-none	255,203.63
+	* rgb-rgb	256,797.11
+	* srgb-rgb	256,800.59
+	* none-rgb	256,845.75
+	* luv-none	262,404.58
+	* luv-srgb	262,405.93
+	* lab-none	264,740.98
+	* lab-srgb	264,741.25
+	* luv-rgb	265,050.73
+	* lab-rgb	266,677.06
 
 * since having none-none gets us within .0075 DSSIM, and since the average file size difference isn’t enormous, I’m thinking I’ll go with none—none
