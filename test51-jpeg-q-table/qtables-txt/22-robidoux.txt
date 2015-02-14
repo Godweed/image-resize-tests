@@ -1,0 +1,43 @@
+######################################################################
+# Nicolas Robidoux's better luma quantization table v2012.02.29
+#
+# To be used with, e.g.,
+#
+#   cjpeg -qtables ThisFile.txt -qslots 0,1 \
+#         -quality YourChosenQuality \
+#         -dct float -baseline -optimize \
+#         -outfile OutputImage.jpg InputImage.ppm
+#
+# The author (Nicolas Robidoux) consults for a living and can dial
+# JPEG artifact mixes in a controlled manner, customize jpegrescan,
+# etc. Email: FiRsTnAmE dOt LaStNaMe HaT gMaIl DoT cOm.
+#
+# Suggested improvements and comments are welcome.
+#
+# The new luma table is a variant of the standard one, first described
+# in an annex of ITU-T Recommendation T.81 (the original "JPEG
+# standard"). For convenience, the standard chroma table (from the
+# same annex) is copied below.
+######################################################################
+
+# The new luma table:
+
+16 11 12 15 21  32  50  66
+11 12 13 18 24  46  62  73
+12 13 16 23 38  56  73  75
+15 18 23 29 53  75  83  83
+21 24 38 53 68  95  103 103
+32 46 56 75 95  104 117 117
+50 62 73 83 103 117 120 120
+66 73 75 83 103 117 120 120
+
+# The standard chroma table:
+
+17 18 24 47 99 99 99 99
+18 21 26 66 99 99 99 99
+24 26 56 99 99 99 99 99
+47 66 99 99 99 99 99 99
+99 99 99 99 99 99 99 99
+99 99 99 99 99 99 99 99
+99 99 99 99 99 99 99 99
+99 99 99 99 99 99 99 99

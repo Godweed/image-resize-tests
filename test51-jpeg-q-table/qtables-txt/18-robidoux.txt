@@ -1,0 +1,61 @@
+# April Fool's quantization table
+
+# Dr. Nicolas Robidoux, Senior Research Scientist at Phase One
+# (www.phaseone.com)
+
+# Named in honour of the April 20th, 2013, snow storm that befell my
+# soon to be former home town Sudbury Ontario, as well as the May 1st
+# snow storm that welcomed my wife Cheryl more than a few years ago.
+
+# Happy Anniversary Cheryl!
+
+# ("A JPEG quantization table! Just what I wanted.")
+
+######################################################################
+
+# Copyright © 2013 Nicolas Robidoux <nicolas.robidoux@gmail.com>
+# This program is free software. It comes without any warranty, to
+# the extent permitted by applicable law. You can redistribute it
+# and/or modify it under the terms of the Do What The Fu You Want
+# To Public License, Version 2, as published by Sam Hocevar. See
+# http://www.wtfpl.net/ for more details.
+
+######################################################################
+
+# RECOMMENDED USE
+
+# Warning: Without Chroma subsampling, this table allocates too many
+# bits to colour preservation.
+
+# Tuned for use with Chroma subsampling ("-sample 2x2" with cjpeg) in
+# the IJG quality range 60 to 80 in viewing conditions appropriate for
+# 20/20 vision when viewed at native size or enlarged 2x. (Pixel
+# peepers: Stay away!)
+
+# One single table is used for all three channels. Using the same
+# quantization table for both Luma and Chroma allows one to embed only
+# one in the image file (using the "-qslots 0" cjpeg option), which
+# yields a nontrivial size reduction with very small
+# thumbnails.
+
+# This quantization table is based on the one recommended by
+
+# Relevance of human vision to JPEG-DCT compression by Stanley
+# A. Klein, Amnon D. Silverstein and Thom Carney. In Human Vision,
+# Visual Processing and Digital Display III, 1992.
+
+# for 1 minute per pixel viewing.
+
+# I decided to simply add 5 across the board, the numerological rationale being
+# that 5 is the single digit number with the highest level of vibrational energy.
+
+######################################################################
+
+18  17  19  24  31  43  62  91
+17  23  26  33  40  46  59  81
+19  26  30  37  49  68  97  141
+24  33  37  46  59  80  112 162
+31  40  49  59  75  100 137 195
+43  46  68  80  100 130 175 244
+62  59  97  112 137 175 232 317
+91  81  141 162 195 244 317 424

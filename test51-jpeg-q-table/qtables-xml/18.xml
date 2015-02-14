@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE quantization-tables [
+<!ELEMENT quantization-tables (table)+>
+<!ELEMENT table (description , levels)>
+<!ELEMENT description (CDATA)>
+<!ELEMENT levels (CDATA)>
+<!ATTLIST table slot ID #REQUIRED>
+<!ATTLIST levels width CDATA #REQUIRED>
+<!ATTLIST levels height CDATA #REQUIRED>
+<!ATTLIST levels divisor CDATA #REQUIRED>
+]>
+<!--
+  JPEG quantization tables.
+-->
+<quantization-tables>
+  <table slot="0" alias="quantization">
+    <description>Quantization Table</description>
+    <levels width="8" height="8" divisor="1">
+		18, 17, 19,  24,  31,  43,  62,  91,
+		17, 23, 26,  33,  40,  46,  59,  81,
+		19, 26, 30,  37,  49,  68,  97,  141,
+		24, 33, 37,  46,  59,  80,  112, 162,
+		31, 40, 49,  59,  75,  100, 137, 195,
+		43, 46, 68,  80,  100, 130, 175, 244,
+		62, 59, 97,  112, 137, 175, 232, 317,
+		91, 81, 141, 162, 195, 244, 317, 424
+    </levels>
+  </table>
+</quantization-tables>
