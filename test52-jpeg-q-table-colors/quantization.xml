@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE quantization-tables [
+<!ELEMENT quantization-tables (table)+>
+<!ELEMENT table (description , levels)>
+<!ELEMENT description (CDATA)>
+<!ELEMENT levels (CDATA)>
+<!ATTLIST table slot ID #REQUIRED>
+<!ATTLIST levels width CDATA #REQUIRED>
+<!ATTLIST levels height CDATA #REQUIRED>
+<!ATTLIST levels divisor CDATA #REQUIRED>
+]>
+<!--
+  JPEG quantization tables.
+  # Nicolas Robidoux's better (?) JPEG quantization tables v.2012.02.16.17
+  # Remix of ISO-IEC 10918-1 : 1993(E) Annex K
+  # Recommended for use with cjpeg -sample 2x2
+  http://www.imagemagick.org/discourse-server/viewtopic.php?t=20333&start=15
+-->
+<quantization-tables>
+  <table slot="0" alias="luminance">
+    <description>Luminance Quantization Table</description>
+    <levels width="8" height="8" divisor="1">
+		16, 12, 12, 15, 21,  31,  50,  67,
+		12, 12, 14, 18, 24,  46,  62,  72,
+		12, 14, 16, 23, 39,  56,  74,  73,
+		15, 18, 23, 29, 54,  75,  84,  78,
+		21, 24, 39, 54, 68,  94,  103, 93,
+		31, 46, 56, 75, 94,  104, 117, 96,
+		50, 62, 74, 84, 103, 117, 120, 102,
+		67, 72, 73, 78, 93,  96,  102, 99
+    </levels>
+  </table>
+
+  <table slot="1" alias="chrominance">
+    <description>Chrominance Quantization Table</description>
+    <levels width="8" height="8" divisor="1">
+		17,  18,  24,  47,   99,   128,  192,  256,
+		18,  21,  26,  66,   99,   128,  192,  256,
+		24,  26,  56,  99,   128,  192,  256,  512,
+		47,  66,  99,  128,  192,  256,  512,  1024,
+		99,  99,  128, 192,  256,  512,  1024, 2048,
+		128, 128, 192, 256,  512,  1024, 3072, 4096,
+		192, 192, 256, 512,  1024, 3072, 6144, 7168,
+		256, 256, 512, 1024, 2048, 4096, 7168, 8192
+    </levels>
+  </table>
+</quantization-tables>
