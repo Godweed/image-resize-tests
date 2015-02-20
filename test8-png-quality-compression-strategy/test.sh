@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # setup dir/structure
 rm -r 0 1 2 3 4
 mkdir 0 1 2 3 4
@@ -12,32 +11,25 @@ mkdir 4/300 4/600 4/1200
 echo "# Test 8: PNG quality — compression-strategy" > conclusions.md
 
 # resize
-mogrify -path 0/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=0 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 0/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=0 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 0/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=0 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
+mogrify -path 0/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=0 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 0/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=0 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 0/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=0 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
 
-mogrify -path 1/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 1/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 1/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
+mogrify -path 1/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 1/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 1/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
 
-mogrify -path 2/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 2/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 2/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
+mogrify -path 2/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 2/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 2/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
 
-mogrify -path 3/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=3 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 3/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=3 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 3/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=3 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
+mogrify -path 3/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=3 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 3/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=3 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 3/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=3 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
 
-mogrify -path 4/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=4 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 4/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=4 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 4/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=4 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-
-
-#!/bin/bash
-# optimize
-imageoptim -d . -q
-imageoptim -d . -q
-imageoptim -d . -q
+mogrify -path 4/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=4 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 4/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=4 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 4/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=4 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
 
 
 # calculate file sizes

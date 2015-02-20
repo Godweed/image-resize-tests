@@ -1,5 +1,5 @@
 # Test 8: PNG quality — compression-strategy
 
-* As with the last couple tests, quality is the same across the board
+* No quality effect
 
-* …and there are tiny differences in file size, with `2` having a slight advantage
+* compression strategy 1 had the best file size
