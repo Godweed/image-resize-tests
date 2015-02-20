@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # setup dir/structure
 rm -r 71 72 73 74 75 76 77 78 79 81 82 83 84 85 86 87 88 89
 mkdir 71 72 73 74 75 76 77 78 79 81 82 83 84 85 86 87 88 89
@@ -25,84 +24,77 @@ mkdir 89/300 89/600 89/1200
 echo "# Test 5: JPEG quality 2" > conclusions.md
 
 # resize
-mogrify -path 71/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 71 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 71/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 71 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 71/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 71 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 71/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 71 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 71/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 71 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 71/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 71 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 72/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 72 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 72/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 72 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 72/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 72 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 72/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 72 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 72/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 72 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 72/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 72 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 73/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 73 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 73/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 73 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 73/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 73 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 73/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 73 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 73/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 73 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 73/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 73 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 74/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 74 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 74/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 74 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 74/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 74 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 74/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 74 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 74/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 74 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 74/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 74 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 75/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 75 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 75/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 75 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 75/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 75 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 75/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 75 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 75/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 75 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 75/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 75 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 76/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 76 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 76/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 76 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 76/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 76 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 76/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 76 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 76/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 76 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 76/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 76 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 77/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 77 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 77/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 77 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 77/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 77 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 77/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 77 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 77/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 77 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 77/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 77 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 78/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 78 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 78/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 78 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 78/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 78 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 78/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 78 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 78/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 78 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 78/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 78 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 79/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 79 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 79/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 79 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 79/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 79 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 79/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 79 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 79/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 79 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 79/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 79 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 81/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 81 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 81/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 81 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 81/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 81 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 81/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 81 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 81/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 81 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 81/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 81 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 82/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 82 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 82/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 82 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 82/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 82 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 82/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 82 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 82/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 82 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 82/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 82 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 83/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 83 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 83/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 83 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 83/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 83 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 83/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 83 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 83/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 83 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 83/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 83 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 84/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 84 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 84/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 84 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 84/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 84 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 84/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 84 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 84/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 84 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 84/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 84 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 85/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 85 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 85/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 85 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 85/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 85 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 85/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 85 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 85/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 85 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 85/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 85 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 86/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 86 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 86/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 86 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 86/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 86 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 86/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 86 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 86/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 86 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 86/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 86 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 87/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 87 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 87/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 87 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 87/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 87 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 87/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 87 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 87/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 87 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 87/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 87 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 88/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 88 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 88/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 88 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 88/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 88 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 88/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 88 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 88/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 88 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 88/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 88 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 89/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 89 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 89/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 89 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 89/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 89 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-
-
-#!/bin/bash
-# optimize
-imageoptim -d . -q
-imageoptim -d . -q
-imageoptim -d . -q
+mogrify -path 89/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -quality 89 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 89/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -quality 89 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 89/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -quality 89 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
 
 # calculate file sizes
