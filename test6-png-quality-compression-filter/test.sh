@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # setup dir/structure
 rm -r 0 1 2 3 4 5 6 7 8 9
 mkdir 0 1 2 3 4 5 6 7 8 9
@@ -16,53 +15,47 @@ mkdir 8/300 8/600 8/1200
 mkdir 9/300 9/600 9/1200
 echo "# Test 6: PNG quality — compression-filter" > conclusions.md
 
+
 # resize
-mogrify -path 0/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=0 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 0/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=0 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 0/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=0 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
+mogrify -path 0/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=0 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 0/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=0 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 0/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=0 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
 
-mogrify -path 1/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=1 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 1/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=1 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 1/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=1 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
+mogrify -path 1/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 1/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 1/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
 
-mogrify -path 2/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 2/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 2/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
+mogrify -path 2/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=2 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 2/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=2 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 2/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=2 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
 
-mogrify -path 3/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=3 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 3/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=3 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 3/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=3 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
+mogrify -path 3/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=3 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 3/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=3 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 3/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=3 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
 
-mogrify -path 4/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=4 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 4/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=4 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 4/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=4 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
+mogrify -path 4/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=4 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 4/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=4 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 4/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=4 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
 
-mogrify -path 5/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=5 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 5/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=5 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 5/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=5 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
+mogrify -path 5/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=5 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 5/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=5 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 5/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=5 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
 
-mogrify -path 6/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=6 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 6/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=6 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 6/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=6 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
+mogrify -path 6/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=6 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 6/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=6 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 6/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=6 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
 
-mogrify -path 7/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=7 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 7/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=7 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 7/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=7 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
+mogrify -path 7/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=7 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 7/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=7 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 7/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=7 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
 
-mogrify -path 8/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=8 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 8/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=8 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 8/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=8 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
+mogrify -path 8/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=8 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 8/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=8 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 8/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=8 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
 
-mogrify -path 9/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=9 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 9/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=9 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 9/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=9 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-
-
-#!/bin/bash
-# optimize
-imageoptim -d . -q
-imageoptim -d . -q
-imageoptim -d . -q
+mogrify -path 9/300 -interpolate bicubic -distort Resize 300 -unsharp 0x1.0 -define png:compression-filter=9 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 9/600 -interpolate bicubic -distort Resize 600 -unsharp 0x1.0 -define png:compression-filter=9 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 9/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0x1.0 -define png:compression-filter=9 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
 
 
 # calculate file sizes
