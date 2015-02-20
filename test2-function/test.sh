@@ -16,146 +16,168 @@ mkdir thumbnail/300 thumbnail/600 thumbnail/1200
 echo "# Test 2: resizing function" > conclusions.md
 
 # resize
-mogrify -path adaptive/300 -adaptive-resize 300 ../assets-unoptimized/*.gif
-mogrify -path adaptive/300 -adaptive-resize 300 ../assets-optimized/*.jpg
-mogrify -path adaptive/300 -adaptive-resize 300 ../assets-optimized/*.png
-mogrify -path adaptive/600 -adaptive-resize 600 ../assets-unoptimized/*.gif
-mogrify -path adaptive/600 -adaptive-resize 600 ../assets-optimized/*.jpg
-mogrify -path adaptive/600 -adaptive-resize 600 ../assets-optimized/*.png
-mogrify -path adaptive/1200 -adaptive-resize 1200 ../assets-unoptimized/*.gif
-mogrify -path adaptive/1200 -adaptive-resize 1200 ../assets-optimized/*.jpg
-mogrify -path adaptive/1200 -adaptive-resize 1200 ../assets-optimized/*.png
+mogrify -path adaptive/300 -adaptive-resize 300 ../assets-unoptimized/*.jpg
+mogrify -path adaptive/300 -adaptive-resize 300 ../assets-unoptimized/*.png
+mogrify -path adaptive/600 -adaptive-resize 600 ../assets-unoptimized/*.jpg
+mogrify -path adaptive/600 -adaptive-resize 600 ../assets-unoptimized/*.png
+mogrify -path adaptive/1200 -adaptive-resize 1200 ../assets-unoptimized/*.jpg
+mogrify -path adaptive/1200 -adaptive-resize 1200 ../assets-unoptimized/*.png
 
-mogrify -path distort/300 -distort Resize 300 ../assets-unoptimized/*.gif
-mogrify -path distort/300 -distort Resize 300 ../assets-optimized/*.jpg
-mogrify -path distort/300 -distort Resize 300 ../assets-optimized/*.png
-mogrify -path distort/600 -distort Resize 600 ../assets-unoptimized/*.gif
-mogrify -path distort/600 -distort Resize 600 ../assets-optimized/*.jpg
-mogrify -path distort/600 -distort Resize 600 ../assets-optimized/*.png
-mogrify -path distort/1200 -distort Resize 1200 ../assets-unoptimized/*.gif
-mogrify -path distort/1200 -distort Resize 1200 ../assets-optimized/*.jpg
-mogrify -path distort/1200 -distort Resize 1200 ../assets-optimized/*.png
+mogrify -path distort/300 -distort Resize 300 ../assets-unoptimized/*.jpg
+mogrify -path distort/300 -distort Resize 300 ../assets-unoptimized/*.png
+mogrify -path distort/600 -distort Resize 600 ../assets-unoptimized/*.jpg
+mogrify -path distort/600 -distort Resize 600 ../assets-unoptimized/*.png
+mogrify -path distort/1200 -distort Resize 1200 ../assets-unoptimized/*.jpg
+mogrify -path distort/1200 -distort Resize 1200 ../assets-unoptimized/*.png
 
-mogrify -path geometry/300 -geometry 300 ../assets-unoptimized/*.gif
-mogrify -path geometry/300 -geometry 300 ../assets-optimized/*.jpg
-mogrify -path geometry/300 -geometry 300 ../assets-optimized/*.png
-mogrify -path geometry/600 -geometry 600 ../assets-unoptimized/*.gif
-mogrify -path geometry/600 -geometry 600 ../assets-optimized/*.jpg
-mogrify -path geometry/600 -geometry 600 ../assets-optimized/*.png
-mogrify -path geometry/1200 -geometry 1200 ../assets-unoptimized/*.gif
-mogrify -path geometry/1200 -geometry 1200 ../assets-optimized/*.jpg
-mogrify -path geometry/1200 -geometry 1200 ../assets-optimized/*.png
+mogrify -path geometry/300 -geometry 300 ../assets-unoptimized/*.jpg
+mogrify -path geometry/300 -geometry 300 ../assets-unoptimized/*.png
+mogrify -path geometry/600 -geometry 600 ../assets-unoptimized/*.jpg
+mogrify -path geometry/600 -geometry 600 ../assets-unoptimized/*.png
+mogrify -path geometry/1200 -geometry 1200 ../assets-unoptimized/*.jpg
+mogrify -path geometry/1200 -geometry 1200 ../assets-unoptimized/*.png
 
 # no interpolative-resize in mogrify
-FILES="../assets-unoptimized/*.gif ../assets-optimized/*.jpg ../assets-optimized/*.png"
+FILES="../assets-unoptimized/*.jpg ../assets-unoptimized/*.png"
 for f in $FILES
 do
 	fn="${f/\.\.\/assets\-unoptimized/}"
-	fn="${fn/\.\.\/assets\-optimized/}"
+	fn="${fn/\.\.\/assets\-unoptimized/}"
 	convert $f -interpolative-resize 300 interpolative/300/$fn
 	convert $f -interpolative-resize 600 interpolative/600/$fn
 	convert $f -interpolative-resize 1200 interpolative/1200/$fn
 done
 
-mogrify -path liquid/300 -liquid-rescale 300 ../assets-unoptimized/*.gif
-mogrify -path liquid/300 -liquid-rescale 300 ../assets-optimized/*.jpg
-mogrify -path liquid/300 -liquid-rescale 300 ../assets-optimized/*.png
-mogrify -path liquid/600 -liquid-rescale 600 ../assets-unoptimized/*.gif
-mogrify -path liquid/600 -liquid-rescale 600 ../assets-optimized/*.jpg
-mogrify -path liquid/600 -liquid-rescale 600 ../assets-optimized/*.png
-mogrify -path liquid/1200 -liquid-rescale 1200 ../assets-unoptimized/*.gif
-mogrify -path liquid/1200 -liquid-rescale 1200 ../assets-optimized/*.jpg
-mogrify -path liquid/1200 -liquid-rescale 1200 ../assets-optimized/*.png
+mogrify -path liquid/300 -liquid-rescale 300 ../assets-unoptimized/*.jpg
+mogrify -path liquid/300 -liquid-rescale 300 ../assets-unoptimized/*.png
+mogrify -path liquid/600 -liquid-rescale 600 ../assets-unoptimized/*.jpg
+mogrify -path liquid/600 -liquid-rescale 600 ../assets-unoptimized/*.png
+mogrify -path liquid/1200 -liquid-rescale 1200 ../assets-unoptimized/*.jpg
+mogrify -path liquid/1200 -liquid-rescale 1200 ../assets-unoptimized/*.png
 
-mogrify -path resize/300 -resize 300 ../assets-unoptimized/*.gif
-mogrify -path resize/300 -resize 300 ../assets-optimized/*.jpg
-mogrify -path resize/300 -resize 300 ../assets-optimized/*.png
-mogrify -path resize/600 -resize 600 ../assets-unoptimized/*.gif
-mogrify -path resize/600 -resize 600 ../assets-optimized/*.jpg
-mogrify -path resize/600 -resize 600 ../assets-optimized/*.png
-mogrify -path resize/1200 -resize 1200 ../assets-unoptimized/*.gif
-mogrify -path resize/1200 -resize 1200 ../assets-optimized/*.jpg
-mogrify -path resize/1200 -resize 1200 ../assets-optimized/*.png
+mogrify -path resize/300 -resize 300 ../assets-unoptimized/*.jpg
+mogrify -path resize/300 -resize 300 ../assets-unoptimized/*.png
+mogrify -path resize/600 -resize 600 ../assets-unoptimized/*.jpg
+mogrify -path resize/600 -resize 600 ../assets-unoptimized/*.png
+mogrify -path resize/1200 -resize 1200 ../assets-unoptimized/*.jpg
+mogrify -path resize/1200 -resize 1200 ../assets-unoptimized/*.png
 
-mogrify -path sample/300 -sample 300 ../assets-unoptimized/*.gif
-mogrify -path sample/300 -sample 300 ../assets-optimized/*.jpg
-mogrify -path sample/300 -sample 300 ../assets-optimized/*.png
-mogrify -path sample/600 -sample 600 ../assets-unoptimized/*.gif
-mogrify -path sample/600 -sample 600 ../assets-optimized/*.jpg
-mogrify -path sample/600 -sample 600 ../assets-optimized/*.png
-mogrify -path sample/1200 -sample 1200 ../assets-unoptimized/*.gif
-mogrify -path sample/1200 -sample 1200 ../assets-optimized/*.jpg
-mogrify -path sample/1200 -sample 1200 ../assets-optimized/*.png
+mogrify -path sample/300 -sample 300 ../assets-unoptimized/*.jpg
+mogrify -path sample/300 -sample 300 ../assets-unoptimized/*.png
+mogrify -path sample/600 -sample 600 ../assets-unoptimized/*.jpg
+mogrify -path sample/600 -sample 600 ../assets-unoptimized/*.png
+mogrify -path sample/1200 -sample 1200 ../assets-unoptimized/*.jpg
+mogrify -path sample/1200 -sample 1200 ../assets-unoptimized/*.png
 
-mogrify -path scale/300 -scale 300 ../assets-unoptimized/*.gif
-mogrify -path scale/300 -scale 300 ../assets-optimized/*.jpg
-mogrify -path scale/300 -scale 300 ../assets-optimized/*.png
-mogrify -path scale/600 -scale 600 ../assets-unoptimized/*.gif
-mogrify -path scale/600 -scale 600 ../assets-optimized/*.jpg
-mogrify -path scale/600 -scale 600 ../assets-optimized/*.png
-mogrify -path scale/1200 -scale 1200 ../assets-unoptimized/*.gif
-mogrify -path scale/1200 -scale 1200 ../assets-optimized/*.jpg
-mogrify -path scale/1200 -scale 1200 ../assets-optimized/*.png
+mogrify -path scale/300 -scale 300 ../assets-unoptimized/*.jpg
+mogrify -path scale/300 -scale 300 ../assets-unoptimized/*.png
+mogrify -path scale/600 -scale 600 ../assets-unoptimized/*.jpg
+mogrify -path scale/600 -scale 600 ../assets-unoptimized/*.png
+mogrify -path scale/1200 -scale 1200 ../assets-unoptimized/*.jpg
+mogrify -path scale/1200 -scale 1200 ../assets-unoptimized/*.png
 
-mogrify -path thumbnail/300 -thumbnail 300 ../assets-unoptimized/*.gif
-mogrify -path thumbnail/300 -thumbnail 300 ../assets-optimized/*.jpg
-mogrify -path thumbnail/300 -thumbnail 300 ../assets-optimized/*.png
-mogrify -path thumbnail/600 -thumbnail 600 ../assets-unoptimized/*.gif
-mogrify -path thumbnail/600 -thumbnail 600 ../assets-optimized/*.jpg
-mogrify -path thumbnail/600 -thumbnail 600 ../assets-optimized/*.png
-mogrify -path thumbnail/1200 -thumbnail 1200 ../assets-unoptimized/*.gif
-mogrify -path thumbnail/1200 -thumbnail 1200 ../assets-optimized/*.jpg
-mogrify -path thumbnail/1200 -thumbnail 1200 ../assets-optimized/*.png
-
-
-#!/bin/bash
-# optimize
-imageoptim -d . -q
-imageoptim -d . -q
-imageoptim -d . -q
+mogrify -path thumbnail/300 -thumbnail 300 ../assets-unoptimized/*.jpg
+mogrify -path thumbnail/300 -thumbnail 300 ../assets-unoptimized/*.png
+mogrify -path thumbnail/600 -thumbnail 600 ../assets-unoptimized/*.jpg
+mogrify -path thumbnail/600 -thumbnail 600 ../assets-unoptimized/*.png
+mogrify -path thumbnail/1200 -thumbnail 1200 ../assets-unoptimized/*.jpg
+mogrify -path thumbnail/1200 -thumbnail 1200 ../assets-unoptimized/*.png
 
 
 # calculate file sizes
 echo "Filename	Size" > ./filesize.tsv
-ls -l */*/*.gif */*/*.jpg */*/*.png | grep -v "^total|^d"|awk '{print $NF"\t"$5 }' >> ./filesize.tsv
+ls -l */*/*.jpg */*/*.png | grep -v "^total|^d"|awk '{print $NF"\t"$5 }' >> ./filesize.tsv
 
 
-# convert GIFs to PNGs for DSSIM comparison
-mogrify -format png adaptive/300/*.gif[0]
-mogrify -format png adaptive/600/*.gif[0]
-mogrify -format png adaptive/1200/*.gif[0]
+# calculate difference: adaptive
+echo "DSSIM	File" > dssim-adaptive.tsv
+FILES="adaptive/300/*.jpg adaptive/300/*.png adaptive/600/*.jpg adaptive/600/*.png adaptive/1200/*.jpg adaptive/1200/*.png"
+for f in $FILES
+do
+	orig="${f/adaptive\/}"
+	orig="${orig/300\//300-unoptimized/}"
+	orig="${orig/600\//600-unoptimized/}"
+	orig="${orig/1200\//1200-unoptimized/}"
+	dssim ../control-ps-save-for-web-\&-devices/$orig ./$f >> dssim-adaptive.tsv
+done
 
-mogrify -format png distort/300/*.gif[0]
-mogrify -format png distort/600/*.gif[0]
-mogrify -format png distort/1200/*.gif[0]
 
-mogrify -format png geometry/300/*.gif[0]
-mogrify -format png geometry/600/*.gif[0]
-mogrify -format png geometry/1200/*.gif[0]
+# calculate difference: distort
+echo "DSSIM	File" > dssim-distort.tsv
+FILES="distort/300/*.jpg distort/300/*.png distort/600/*.jpg distort/600/*.png distort/1200/*.jpg distort/1200/*.png"
+for f in $FILES
+do
+	orig="${f/distort\/}"
+	orig="${orig/300\//300-unoptimized/}"
+	orig="${orig/600\//600-unoptimized/}"
+	orig="${orig/1200\//1200-unoptimized/}"
+	dssim ../control-ps-save-for-web-\&-devices/$orig ./$f >> dssim-distort.tsv
+done
 
-mogrify -format png interpolative/300/*.gif[0]
-mogrify -format png interpolative/600/*.gif[0]
-mogrify -format png interpolative/1200/*.gif[0]
 
-mogrify -format png liquid/300/*.gif[0]
-mogrify -format png liquid/600/*.gif[0]
-mogrify -format png liquid/1200/*.gif[0]
+# calculate difference: geometry
+echo "DSSIM	File" > dssim-geometry.tsv
+FILES="geometry/300/*.jpg geometry/300/*.png geometry/600/*.jpg geometry/600/*.png geometry/1200/*.jpg geometry/1200/*.png"
+for f in $FILES
+do
+	orig="${f/geometry\/}"
+	orig="${orig/300\//300-unoptimized/}"
+	orig="${orig/600\//600-unoptimized/}"
+	orig="${orig/1200\//1200-unoptimized/}"
+	dssim ../control-ps-save-for-web-\&-devices/$orig ./$f >> dssim-geometry.tsv
+done
 
-mogrify -format png resize/300/*.gif[0]
-mogrify -format png resize/600/*.gif[0]
-mogrify -format png resize/1200/*.gif[0]
 
-mogrify -format png sample/300/*.gif[0]
-mogrify -format png sample/600/*.gif[0]
-mogrify -format png sample/1200/*.gif[0]
+# calculate difference: interpolative
+echo "DSSIM	File" > dssim-interpolative.tsv
+FILES="interpolative/300/*.jpg interpolative/300/*.png interpolative/600/*.jpg interpolative/600/*.png interpolative/1200/*.jpg interpolative/1200/*.png"
+for f in $FILES
+do
+	orig="${f/interpolative\/}"
+	orig="${orig/300\//300-unoptimized/}"
+	orig="${orig/600\//600-unoptimized/}"
+	orig="${orig/1200\//1200-unoptimized/}"
+	dssim ../control-ps-save-for-web-\&-devices/$orig ./$f >> dssim-interpolative.tsv
+done
 
-mogrify -format png scale/300/*.gif[0]
-mogrify -format png scale/600/*.gif[0]
-mogrify -format png scale/1200/*.gif[0]
 
-mogrify -format png thumbnail/300/*.gif[0]
-mogrify -format png thumbnail/600/*.gif[0]
-mogrify -format png thumbnail/1200/*.gif[0]
+# calculate difference: liquid
+echo "DSSIM	File" > dssim-liquid.tsv
+FILES="liquid/300/*.jpg liquid/300/*.png liquid/600/*.jpg liquid/600/*.png liquid/1200/*.jpg liquid/1200/*.png"
+for f in $FILES
+do
+	orig="${f/liquid\/}"
+	orig="${orig/300\//300-unoptimized/}"
+	orig="${orig/600\//600-unoptimized/}"
+	orig="${orig/1200\//1200-unoptimized/}"
+	dssim ../control-ps-save-for-web-\&-devices/$orig ./$f >> dssim-liquid.tsv
+done
+
+
+# calculate difference: resize
+echo "DSSIM	File" > dssim-resize.tsv
+FILES="resize/300/*.jpg resize/300/*.png resize/600/*.jpg resize/600/*.png resize/1200/*.jpg resize/1200/*.png"
+for f in $FILES
+do
+	orig="${f/resize\/}"
+	orig="${orig/300\//300-unoptimized/}"
+	orig="${orig/600\//600-unoptimized/}"
+	orig="${orig/1200\//1200-unoptimized/}"
+	dssim ../control-ps-save-for-web-\&-devices/$orig ./$f >> dssim-resize.tsv
+done
+
+
+# calculate difference: sample
+echo "DSSIM	File" > dssim-sample.tsv
+FILES="sample/300/*.jpg sample/300/*.png sample/600/*.jpg sample/600/*.png sample/1200/*.jpg sample/1200/*.png"
+for f in $FILES
+do
+	orig="${f/sample\/}"
+	orig="${orig/300\//300-unoptimized/}"
+	orig="${orig/600\//600-unoptimized/}"
+	orig="${orig/1200\//1200-unoptimized/}"
+	dssim ../control-ps-save-for-web-\&-devices/$orig ./$f >> dssim-sample.tsv
+done
 
 
 # calculate difference: adaptive
