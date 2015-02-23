@@ -22,183 +22,117 @@ mkdir 15/300 15/600 15/1200
 echo "# Test 9: unsharp radius" > conclusions.md
 
 # resize
-mogrify -path 00/300 -interpolate bicubic -distort Resize 300 -unsharp 0.0x0.0 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 00/300 -interpolate bicubic -distort Resize 300 -unsharp 0.0x0.0 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 00/600 -interpolate bicubic -distort Resize 600 -unsharp 0.0x0.0 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 00/600 -interpolate bicubic -distort Resize 600 -unsharp 0.0x0.0 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 00/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.0x0.0 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 00/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.0x0.0 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 00/300 -interpolate bicubic -distort Resize 300 -unsharp 0.0x0.0 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 00/300 -interpolate bicubic -distort Resize 300 -unsharp 0.0x0.0 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 00/600 -interpolate bicubic -distort Resize 600 -unsharp 0.0x0.0 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 00/600 -interpolate bicubic -distort Resize 600 -unsharp 0.0x0.0 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 00/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.0x0.0 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 00/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.0x0.0 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 01/300 -interpolate bicubic -distort Resize 300 -unsharp 0.1x0.1 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 01/300 -interpolate bicubic -distort Resize 300 -unsharp 0.1x0.1 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 01/600 -interpolate bicubic -distort Resize 600 -unsharp 0.1x0.1 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 01/600 -interpolate bicubic -distort Resize 600 -unsharp 0.1x0.1 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 01/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.1x0.1 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 01/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.1x0.1 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 01/300 -interpolate bicubic -distort Resize 300 -unsharp 0.1x0.1 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 01/300 -interpolate bicubic -distort Resize 300 -unsharp 0.1x0.1 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 01/600 -interpolate bicubic -distort Resize 600 -unsharp 0.1x0.1 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 01/600 -interpolate bicubic -distort Resize 600 -unsharp 0.1x0.1 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 01/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.1x0.1 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 01/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.1x0.1 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 02/300 -interpolate bicubic -distort Resize 300 -unsharp 0.2x0.2 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 02/300 -interpolate bicubic -distort Resize 300 -unsharp 0.2x0.2 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 02/600 -interpolate bicubic -distort Resize 600 -unsharp 0.2x0.2 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 02/600 -interpolate bicubic -distort Resize 600 -unsharp 0.2x0.2 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 02/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.2x0.2 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 02/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.2x0.2 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 02/300 -interpolate bicubic -distort Resize 300 -unsharp 0.2x0.2 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 02/300 -interpolate bicubic -distort Resize 300 -unsharp 0.2x0.2 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 02/600 -interpolate bicubic -distort Resize 600 -unsharp 0.2x0.2 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 02/600 -interpolate bicubic -distort Resize 600 -unsharp 0.2x0.2 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 02/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.2x0.2 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 02/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.2x0.2 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 03/300 -interpolate bicubic -distort Resize 300 -unsharp 0.3x0.3 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 03/300 -interpolate bicubic -distort Resize 300 -unsharp 0.3x0.3 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 03/600 -interpolate bicubic -distort Resize 600 -unsharp 0.3x0.3 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 03/600 -interpolate bicubic -distort Resize 600 -unsharp 0.3x0.3 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 03/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.3x0.3 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 03/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.3x0.3 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 03/300 -interpolate bicubic -distort Resize 300 -unsharp 0.3x0.3 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 03/300 -interpolate bicubic -distort Resize 300 -unsharp 0.3x0.3 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 03/600 -interpolate bicubic -distort Resize 600 -unsharp 0.3x0.3 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 03/600 -interpolate bicubic -distort Resize 600 -unsharp 0.3x0.3 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 03/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.3x0.3 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 03/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.3x0.3 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 04/300 -interpolate bicubic -distort Resize 300 -unsharp 0.4x0.4 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 04/300 -interpolate bicubic -distort Resize 300 -unsharp 0.4x0.4 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 04/600 -interpolate bicubic -distort Resize 600 -unsharp 0.4x0.4 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 04/600 -interpolate bicubic -distort Resize 600 -unsharp 0.4x0.4 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 04/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.4x0.4 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 04/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.4x0.4 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 04/300 -interpolate bicubic -distort Resize 300 -unsharp 0.4x0.4 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 04/300 -interpolate bicubic -distort Resize 300 -unsharp 0.4x0.4 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 04/600 -interpolate bicubic -distort Resize 600 -unsharp 0.4x0.4 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 04/600 -interpolate bicubic -distort Resize 600 -unsharp 0.4x0.4 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 04/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.4x0.4 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 04/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.4x0.4 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 05/300 -interpolate bicubic -distort Resize 300 -unsharp 0.5x0.5 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 05/300 -interpolate bicubic -distort Resize 300 -unsharp 0.5x0.5 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 05/600 -interpolate bicubic -distort Resize 600 -unsharp 0.5x0.5 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 05/600 -interpolate bicubic -distort Resize 600 -unsharp 0.5x0.5 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 05/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.5x0.5 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 05/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.5x0.5 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 05/300 -interpolate bicubic -distort Resize 300 -unsharp 0.5x0.5 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 05/300 -interpolate bicubic -distort Resize 300 -unsharp 0.5x0.5 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 05/600 -interpolate bicubic -distort Resize 600 -unsharp 0.5x0.5 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 05/600 -interpolate bicubic -distort Resize 600 -unsharp 0.5x0.5 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 05/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.5x0.5 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 05/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.5x0.5 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 06/300 -interpolate bicubic -distort Resize 300 -unsharp 0.6x0.6 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 06/300 -interpolate bicubic -distort Resize 300 -unsharp 0.6x0.6 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 06/600 -interpolate bicubic -distort Resize 600 -unsharp 0.6x0.6 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 06/600 -interpolate bicubic -distort Resize 600 -unsharp 0.6x0.6 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 06/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.6x0.6 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 06/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.6x0.6 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 06/300 -interpolate bicubic -distort Resize 300 -unsharp 0.6x0.6 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 06/300 -interpolate bicubic -distort Resize 300 -unsharp 0.6x0.6 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 06/600 -interpolate bicubic -distort Resize 600 -unsharp 0.6x0.6 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 06/600 -interpolate bicubic -distort Resize 600 -unsharp 0.6x0.6 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 06/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.6x0.6 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 06/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.6x0.6 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 07/300 -interpolate bicubic -distort Resize 300 -unsharp 0.7x0.7 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 07/300 -interpolate bicubic -distort Resize 300 -unsharp 0.7x0.7 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 07/600 -interpolate bicubic -distort Resize 600 -unsharp 0.7x0.7 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 07/600 -interpolate bicubic -distort Resize 600 -unsharp 0.7x0.7 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 07/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.7x0.7 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 07/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.7x0.7 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 07/300 -interpolate bicubic -distort Resize 300 -unsharp 0.7x0.7 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 07/300 -interpolate bicubic -distort Resize 300 -unsharp 0.7x0.7 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 07/600 -interpolate bicubic -distort Resize 600 -unsharp 0.7x0.7 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 07/600 -interpolate bicubic -distort Resize 600 -unsharp 0.7x0.7 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 07/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.7x0.7 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 07/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.7x0.7 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 08/300 -interpolate bicubic -distort Resize 300 -unsharp 0.8x0.8 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 08/300 -interpolate bicubic -distort Resize 300 -unsharp 0.8x0.8 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 08/600 -interpolate bicubic -distort Resize 600 -unsharp 0.8x0.8 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 08/600 -interpolate bicubic -distort Resize 600 -unsharp 0.8x0.8 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 08/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.8x0.8 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 08/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.8x0.8 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 08/300 -interpolate bicubic -distort Resize 300 -unsharp 0.8x0.8 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 08/300 -interpolate bicubic -distort Resize 300 -unsharp 0.8x0.8 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 08/600 -interpolate bicubic -distort Resize 600 -unsharp 0.8x0.8 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 08/600 -interpolate bicubic -distort Resize 600 -unsharp 0.8x0.8 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 08/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.8x0.8 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 08/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.8x0.8 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 09/300 -interpolate bicubic -distort Resize 300 -unsharp 0.9x0.9 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 09/300 -interpolate bicubic -distort Resize 300 -unsharp 0.9x0.9 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 09/600 -interpolate bicubic -distort Resize 600 -unsharp 0.9x0.9 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 09/600 -interpolate bicubic -distort Resize 600 -unsharp 0.9x0.9 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 09/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.9x0.9 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 09/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.9x0.9 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 09/300 -interpolate bicubic -distort Resize 300 -unsharp 0.9x0.9 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 09/300 -interpolate bicubic -distort Resize 300 -unsharp 0.9x0.9 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 09/600 -interpolate bicubic -distort Resize 600 -unsharp 0.9x0.9 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 09/600 -interpolate bicubic -distort Resize 600 -unsharp 0.9x0.9 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 09/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.9x0.9 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 09/1200 -interpolate bicubic -distort Resize 1200 -unsharp 0.9x0.9 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 10/300 -interpolate bicubic -distort Resize 300 -unsharp 1.0x1.0 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 10/300 -interpolate bicubic -distort Resize 300 -unsharp 1.0x1.0 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 10/600 -interpolate bicubic -distort Resize 600 -unsharp 1.0x1.0 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 10/600 -interpolate bicubic -distort Resize 600 -unsharp 1.0x1.0 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 10/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.0x1.0 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 10/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.0x1.0 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 10/300 -interpolate bicubic -distort Resize 300 -unsharp 1.0x1.0 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 10/300 -interpolate bicubic -distort Resize 300 -unsharp 1.0x1.0 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 10/600 -interpolate bicubic -distort Resize 600 -unsharp 1.0x1.0 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 10/600 -interpolate bicubic -distort Resize 600 -unsharp 1.0x1.0 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 10/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.0x1.0 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 10/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.0x1.0 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 11/300 -interpolate bicubic -distort Resize 300 -unsharp 1.1x1.049 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 11/300 -interpolate bicubic -distort Resize 300 -unsharp 1.1x1.049 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 11/600 -interpolate bicubic -distort Resize 600 -unsharp 1.1x1.049 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 11/600 -interpolate bicubic -distort Resize 600 -unsharp 1.1x1.049 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 11/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.1x1.049 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 11/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.1x1.049 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 11/300 -interpolate bicubic -distort Resize 300 -unsharp 1.1x1.049 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 11/300 -interpolate bicubic -distort Resize 300 -unsharp 1.1x1.049 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 11/600 -interpolate bicubic -distort Resize 600 -unsharp 1.1x1.049 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 11/600 -interpolate bicubic -distort Resize 600 -unsharp 1.1x1.049 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 11/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.1x1.049 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 11/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.1x1.049 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 12/300 -interpolate bicubic -distort Resize 300 -unsharp 1.2x1.095 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 12/300 -interpolate bicubic -distort Resize 300 -unsharp 1.2x1.095 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 12/600 -interpolate bicubic -distort Resize 600 -unsharp 1.2x1.095 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 12/600 -interpolate bicubic -distort Resize 600 -unsharp 1.2x1.095 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 12/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.2x1.095 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 12/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.2x1.095 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 12/300 -interpolate bicubic -distort Resize 300 -unsharp 1.2x1.095 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 12/300 -interpolate bicubic -distort Resize 300 -unsharp 1.2x1.095 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 12/600 -interpolate bicubic -distort Resize 600 -unsharp 1.2x1.095 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 12/600 -interpolate bicubic -distort Resize 600 -unsharp 1.2x1.095 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 12/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.2x1.095 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 12/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.2x1.095 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 13/300 -interpolate bicubic -distort Resize 300 -unsharp 1.3x1.141 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 13/300 -interpolate bicubic -distort Resize 300 -unsharp 1.3x1.141 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 13/600 -interpolate bicubic -distort Resize 600 -unsharp 1.3x1.141 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 13/600 -interpolate bicubic -distort Resize 600 -unsharp 1.3x1.141 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 13/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.3x1.141 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 13/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.3x1.141 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 13/300 -interpolate bicubic -distort Resize 300 -unsharp 1.3x1.141 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 13/300 -interpolate bicubic -distort Resize 300 -unsharp 1.3x1.141 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 13/600 -interpolate bicubic -distort Resize 600 -unsharp 1.3x1.141 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 13/600 -interpolate bicubic -distort Resize 600 -unsharp 1.3x1.141 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 13/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.3x1.141 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 13/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.3x1.141 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 14/300 -interpolate bicubic -distort Resize 300 -unsharp 1.4x1.183 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 14/300 -interpolate bicubic -distort Resize 300 -unsharp 1.4x1.183 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 14/600 -interpolate bicubic -distort Resize 600 -unsharp 1.4x1.183 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 14/600 -interpolate bicubic -distort Resize 600 -unsharp 1.4x1.183 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 14/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.4x1.183 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 14/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.4x1.183 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
+mogrify -path 14/300 -interpolate bicubic -distort Resize 300 -unsharp 1.4x1.183 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 14/300 -interpolate bicubic -distort Resize 300 -unsharp 1.4x1.183 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 14/600 -interpolate bicubic -distort Resize 600 -unsharp 1.4x1.183 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 14/600 -interpolate bicubic -distort Resize 600 -unsharp 1.4x1.183 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 14/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.4x1.183 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 14/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.4x1.183 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
-mogrify -path 15/300 -interpolate bicubic -distort Resize 300 -unsharp 1.5x1.225 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 15/300 -interpolate bicubic -distort Resize 300 -unsharp 1.5x1.225 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 15/600 -interpolate bicubic -distort Resize 600 -unsharp 1.5x1.225 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 15/600 -interpolate bicubic -distort Resize 600 -unsharp 1.5x1.225 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-mogrify -path 15/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.5x1.225 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.png
-mogrify -path 15/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.5x1.225 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none -colorspace sRGB -strip ../assets-optimized/*.jpg
-
-
-# optimize
-imageoptim -d 00 -q
-imageoptim -d 00 -q
-imageoptim -d 00 -q
-
-imageoptim -d 01 -q
-imageoptim -d 01 -q
-imageoptim -d 01 -q
-
-imageoptim -d 02 -q
-imageoptim -d 02 -q
-imageoptim -d 02 -q
-
-imageoptim -d 03 -q
-imageoptim -d 03 -q
-imageoptim -d 03 -q
-
-imageoptim -d 04 -q
-imageoptim -d 04 -q
-imageoptim -d 04 -q
-
-imageoptim -d 05 -q
-imageoptim -d 05 -q
-imageoptim -d 05 -q
-
-imageoptim -d 06 -q
-imageoptim -d 06 -q
-imageoptim -d 06 -q
-
-imageoptim -d 07 -q
-imageoptim -d 07 -q
-imageoptim -d 07 -q
-
-imageoptim -d 08 -q
-imageoptim -d 08 -q
-imageoptim -d 08 -q
-
-imageoptim -d 09 -q
-imageoptim -d 09 -q
-imageoptim -d 09 -q
-
-imageoptim -d 10 -q
-imageoptim -d 10 -q
-imageoptim -d 10 -q
-
-imageoptim -d 11 -q
-imageoptim -d 11 -q
-imageoptim -d 11 -q
-
-imageoptim -d 12 -q
-imageoptim -d 12 -q
-imageoptim -d 12 -q
-
-imageoptim -d 13 -q
-imageoptim -d 13 -q
-imageoptim -d 13 -q
-
-imageoptim -d 14 -q
-imageoptim -d 14 -q
-imageoptim -d 14 -q
-
-imageoptim -d 15 -q
-imageoptim -d 15 -q
-imageoptim -d 15 -q
+mogrify -path 15/300 -interpolate bicubic -distort Resize 300 -unsharp 1.5x1.225 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 15/300 -interpolate bicubic -distort Resize 300 -unsharp 1.5x1.225 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 15/600 -interpolate bicubic -distort Resize 600 -unsharp 1.5x1.225 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 15/600 -interpolate bicubic -distort Resize 600 -unsharp 1.5x1.225 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path 15/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.5x1.225 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path 15/1200 -interpolate bicubic -distort Resize 1200 -unsharp 1.5x1.225 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
 
 
 # calculate file sizes
