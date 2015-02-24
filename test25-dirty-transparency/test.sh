@@ -11,57 +11,39 @@ echo "# Test 25: dirty transparency" > conclusions.md
 
 # resize
 # no clone in mogrify
-FILES="../assets-optimized/*.jpg ../assets-optimized/*.png"
+FILES="../assets-unoptimized/*.jpg ../assets-unoptimized/*.png"
 for f in $FILES
 do
 	fn="${f/\.\.\/assets\-unoptimized/}"
-	fn="${fn/\.\.\/assets\-optimized/}"
-	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.045 \( -clone 0 -alpha extract \) \( -clone 0 -clone 1 -compose multiply -composite \) -delete 0 +swap -alpha off -compose copy_opacity -composite -depth 8 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none method1/300/$fn
-	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.045 \( -clone 0 -alpha extract \) \( -clone 0 -clone 1 -compose multiply -composite \) -delete 0 +swap -alpha off -compose copy_opacity -composite -depth 8 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none method1/600/$fn
-	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.045 \( -clone 0 -alpha extract \) \( -clone 0 -clone 1 -compose multiply -composite \) -delete 0 +swap -alpha off -compose copy_opacity -composite -depth 8 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none method1/1200/$fn
+	fn="${fn/\.\.\/assets\-unoptimized/}"
+	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.065 \( -clone 0 -alpha extract \) \( -clone 0 -clone 1 -compose multiply -composite \) -delete 0 +swap -alpha off -compose copy_opacity -composite -depth 8 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB method1/300/$fn
+	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.065 \( -clone 0 -alpha extract \) \( -clone 0 -clone 1 -compose multiply -composite \) -delete 0 +swap -alpha off -compose copy_opacity -composite -depth 8 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB method1/600/$fn
+	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.065 \( -clone 0 -alpha extract \) \( -clone 0 -clone 1 -compose multiply -composite \) -delete 0 +swap -alpha off -compose copy_opacity -composite -depth 8 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB method1/1200/$fn
 done
 
-FILES="../assets-optimized/*.jpg ../assets-optimized/*.png"
+FILES="../assets-unoptimized/*.jpg ../assets-unoptimized/*.png"
 for f in $FILES
 do
 	fn="${f/\.\.\/assets\-unoptimized/}"
-	fn="${fn/\.\.\/assets\-optimized/}"
-	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.045 \( -clone 0 -alpha extract \) \( -clone 0 -clone 1 -compose multiply -composite \) -delete 0 +swap -alpha off -compose copy_opacity -composite -define png:color-type=2 -define png:bit-depth=8 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none method2/300/$fn
-	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.045 \( -clone 0 -alpha extract \) \( -clone 0 -clone 1 -compose multiply -composite \) -delete 0 +swap -alpha off -compose copy_opacity -composite -define png:color-type=2 -define png:bit-depth=8 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none method2/600/$fn
-	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.045 \( -clone 0 -alpha extract \) \( -clone 0 -clone 1 -compose multiply -composite \) -delete 0 +swap -alpha off -compose copy_opacity -composite -define png:color-type=2 -define png:bit-depth=8 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none method2/1200/$fn
+	fn="${fn/\.\.\/assets\-unoptimized/}"
+	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.065 \( -clone 0 -alpha extract \) \( -clone 0 -clone 1 -compose multiply -composite \) -delete 0 +swap -alpha off -compose copy_opacity -composite -define png:color-type=2 -define png:bit-depth=8 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB method2/300/$fn
+	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.065 \( -clone 0 -alpha extract \) \( -clone 0 -clone 1 -compose multiply -composite \) -delete 0 +swap -alpha off -compose copy_opacity -composite -define png:color-type=2 -define png:bit-depth=8 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB method2/600/$fn
+	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.065 \( -clone 0 -alpha extract \) \( -clone 0 -clone 1 -compose multiply -composite \) -delete 0 +swap -alpha off -compose copy_opacity -composite -define png:color-type=2 -define png:bit-depth=8 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB method2/1200/$fn
 done
 
-mogrify -path method3/300 -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.045 -background Black -alpha Background -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none ../assets-optimized/*.jpg
-mogrify -path method3/300 -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.045 -background Black -alpha Background -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none ../assets-optimized/*.png
-mogrify -path method3/600 -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.045 -background Black -alpha Background -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none ../assets-optimized/*.jpg
-mogrify -path method3/600 -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.045 -background Black -alpha Background -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none ../assets-optimized/*.png
-mogrify -path method3/1200 -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.045 -background Black -alpha Background -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none ../assets-optimized/*.jpg
-mogrify -path method3/1200 -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.045 -background Black -alpha Background -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none ../assets-optimized/*.png
+mogrify -path method3/300 -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.065 -background Black -alpha Background -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path method3/300 -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.065 -background Black -alpha Background -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path method3/600 -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.065 -background Black -alpha Background -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path method3/600 -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.065 -background Black -alpha Background -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path method3/1200 -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.065 -background Black -alpha Background -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path method3/1200 -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.065 -background Black -alpha Background -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
 
-mogrify -path none/300 -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.045 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none ../assets-optimized/*.jpg
-mogrify -path none/300 -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.045 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none ../assets-optimized/*.png
-mogrify -path none/600 -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.045 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none ../assets-optimized/*.jpg
-mogrify -path none/600 -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.045 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none ../assets-optimized/*.png
-mogrify -path none/1200 -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.045 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none ../assets-optimized/*.jpg
-mogrify -path none/1200 -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.045 -quality 82 -define png:compression-filter=2 -define png:compression-level=6 -define png:compression-strategy=2 -interlace none ../assets-optimized/*.png
-
-
-# optimize
-imageoptim -d method1 -q
-imageoptim -d method1 -q
-imageoptim -d method1 -q
-
-imageoptim -d method2 -q
-imageoptim -d method2 -q
-imageoptim -d method2 -q
-
-imageoptim -d method3 -q
-imageoptim -d method3 -q
-imageoptim -d method3 -q
-
-imageoptim -d none -q
-imageoptim -d none -q
-imageoptim -d none -q
+mogrify -path none/300 -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.065 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path none/300 -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.065 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path none/600 -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.065 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path none/600 -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.065 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
+mogrify -path none/1200 -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.065 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.jpg
+mogrify -path none/1200 -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.065 -quality 82 -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -interlace none -colorspace sRGB -strip ../assets-unoptimized/*.png
 
 
 # calculate file sizes
