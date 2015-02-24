@@ -1,5 +1,5 @@
 # Test 24: depth
 
-* Everything below 8-bit was crap quality
-* 8-bit and above was all the same as not specifying
-* Don’t specify
+* 8 and higher (and none) have ok (identical) dssim
+
+* 16 and higher (and none) have smallest file size, so I’ll go with none
