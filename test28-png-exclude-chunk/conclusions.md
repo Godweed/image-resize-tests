@@ -1,3 +1,3 @@
 # Test 28: png-exclude-chunk
 
-* No effect
+* Surprisingly, this improved DSSIM *and* file size
