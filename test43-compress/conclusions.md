@@ -1,5 +1,5 @@
 # Test 43: compress
 
-* No effect, except for the Lossless ones, which we don’t want to use
-
-* JBIG1 and RunlengthEncoded look like maybe they had an effect, but I’m thinking it was just random
+* Other than Lossless/LosslessJPEG, no effect on DSSIM. Those two had better DSSIMs.
+* Same deal with file size; Lossless ones are huge
+* Not useful
