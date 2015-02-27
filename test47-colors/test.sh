@@ -9,187 +9,145 @@ mkdir 1/1200 2/1200 3/1200 4/1200 5/1200 6/1200 7/1200 8/1200 9/1200 10/1200
 
 echo "# Test 47: colors" > conclusions.md
 
-FILES="../assets-optimized/*.jpg ../assets-optimized/*.png"
+FILES="../assets-unoptimized/*.jpg ../assets-unoptimized/*.png"
 for f in $FILES
 do
 	fn="${f/\.\.\/assets\-unoptimized/}"
-	fn="${fn/\.\.\/assets\-optimized/}"
+	fn="${fn/\.\.\/assets\-unoptimized/}"
 
 	NUMBER_OF_COLORS=$(identify -format '%k' $f)
 	NUMBER_OF_COLORS=`expr $NUMBER_OF_COLORS`
 
-	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 1/300/$fn
-	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 1/600/$fn
-	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 1/1200/$fn
+	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 1/300/$fn
+	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 1/600/$fn
+	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 1/1200/$fn
 done
 
-FILES="../assets-optimized/*.jpg ../assets-optimized/*.png"
+FILES="../assets-unoptimized/*.jpg ../assets-unoptimized/*.png"
 for f in $FILES
 do
 	fn="${f/\.\.\/assets\-unoptimized/}"
-	fn="${fn/\.\.\/assets\-optimized/}"
+	fn="${fn/\.\.\/assets\-unoptimized/}"
 
 	NUMBER_OF_COLORS=$(identify -format '%k' $f)
 	NUMBER_OF_COLORS=`expr $NUMBER_OF_COLORS \* 2`
 
-	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 2/300/$fn
-	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 2/600/$fn
-	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 2/1200/$fn
+	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 2/300/$fn
+	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 2/600/$fn
+	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 2/1200/$fn
 done
 
-FILES="../assets-optimized/*.jpg ../assets-optimized/*.png"
+FILES="../assets-unoptimized/*.jpg ../assets-unoptimized/*.png"
 for f in $FILES
 do
 	fn="${f/\.\.\/assets\-unoptimized/}"
-	fn="${fn/\.\.\/assets\-optimized/}"
+	fn="${fn/\.\.\/assets\-unoptimized/}"
 
 	NUMBER_OF_COLORS=$(identify -format '%k' $f)
 	NUMBER_OF_COLORS=`expr $NUMBER_OF_COLORS \* 3`
 
-	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 3/300/$fn
-	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 3/600/$fn
-	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 3/1200/$fn
+	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 3/300/$fn
+	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 3/600/$fn
+	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 3/1200/$fn
 done
 
-FILES="../assets-optimized/*.jpg ../assets-optimized/*.png"
+FILES="../assets-unoptimized/*.jpg ../assets-unoptimized/*.png"
 for f in $FILES
 do
 	fn="${f/\.\.\/assets\-unoptimized/}"
-	fn="${fn/\.\.\/assets\-optimized/}"
+	fn="${fn/\.\.\/assets\-unoptimized/}"
 
 	NUMBER_OF_COLORS=$(identify -format '%k' $f)
 	NUMBER_OF_COLORS=`expr $NUMBER_OF_COLORS \* 4`
 
-	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 4/300/$fn
-	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 4/600/$fn
-	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 4/1200/$fn
+	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 4/300/$fn
+	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 4/600/$fn
+	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 4/1200/$fn
 done
 
-FILES="../assets-optimized/*.jpg ../assets-optimized/*.png"
+FILES="../assets-unoptimized/*.jpg ../assets-unoptimized/*.png"
 for f in $FILES
 do
 	fn="${f/\.\.\/assets\-unoptimized/}"
-	fn="${fn/\.\.\/assets\-optimized/}"
+	fn="${fn/\.\.\/assets\-unoptimized/}"
 
 	NUMBER_OF_COLORS=$(identify -format '%k' $f)
 	NUMBER_OF_COLORS=`expr $NUMBER_OF_COLORS \* 5`
 
-	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 5/300/$fn
-	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 5/600/$fn
-	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 5/1200/$fn
+	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 5/300/$fn
+	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 5/600/$fn
+	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 5/1200/$fn
 done
 
-FILES="../assets-optimized/*.jpg ../assets-optimized/*.png"
+FILES="../assets-unoptimized/*.jpg ../assets-unoptimized/*.png"
 for f in $FILES
 do
 	fn="${f/\.\.\/assets\-unoptimized/}"
-	fn="${fn/\.\.\/assets\-optimized/}"
+	fn="${fn/\.\.\/assets\-unoptimized/}"
 
 	NUMBER_OF_COLORS=$(identify -format '%k' $f)
 	NUMBER_OF_COLORS=`expr $NUMBER_OF_COLORS \* 6`
 
-	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 6/300/$fn
-	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 6/600/$fn
-	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 6/1200/$fn
+	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 6/300/$fn
+	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 6/600/$fn
+	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 6/1200/$fn
 done
 
-FILES="../assets-optimized/*.jpg ../assets-optimized/*.png"
+FILES="../assets-unoptimized/*.jpg ../assets-unoptimized/*.png"
 for f in $FILES
 do
 	fn="${f/\.\.\/assets\-unoptimized/}"
-	fn="${fn/\.\.\/assets\-optimized/}"
+	fn="${fn/\.\.\/assets\-unoptimized/}"
 
 	NUMBER_OF_COLORS=$(identify -format '%k' $f)
 	NUMBER_OF_COLORS=`expr $NUMBER_OF_COLORS \* 7`
 
-	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 7/300/$fn
-	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 7/600/$fn
-	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 7/1200/$fn
+	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 7/300/$fn
+	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 7/600/$fn
+	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 7/1200/$fn
 done
 
-FILES="../assets-optimized/*.jpg ../assets-optimized/*.png"
+FILES="../assets-unoptimized/*.jpg ../assets-unoptimized/*.png"
 for f in $FILES
 do
 	fn="${f/\.\.\/assets\-unoptimized/}"
-	fn="${fn/\.\.\/assets\-optimized/}"
+	fn="${fn/\.\.\/assets\-unoptimized/}"
 
 	NUMBER_OF_COLORS=$(identify -format '%k' $f)
 	NUMBER_OF_COLORS=`expr $NUMBER_OF_COLORS \* 8`
 
-	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 8/300/$fn
-	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 8/600/$fn
-	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 8/1200/$fn
+	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 8/300/$fn
+	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 8/600/$fn
+	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 8/1200/$fn
 done
 
-FILES="../assets-optimized/*.jpg ../assets-optimized/*.png"
+FILES="../assets-unoptimized/*.jpg ../assets-unoptimized/*.png"
 for f in $FILES
 do
 	fn="${f/\.\.\/assets\-unoptimized/}"
-	fn="${fn/\.\.\/assets\-optimized/}"
+	fn="${fn/\.\.\/assets\-unoptimized/}"
 
 	NUMBER_OF_COLORS=$(identify -format '%k' $f)
 	NUMBER_OF_COLORS=`expr $NUMBER_OF_COLORS \* 9`
 
-	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 9/300/$fn
-	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 9/600/$fn
-	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 9/1200/$fn
+	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 9/300/$fn
+	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 9/600/$fn
+	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 9/1200/$fn
 done
 
-FILES="../assets-optimized/*.jpg ../assets-optimized/*.png"
+FILES="../assets-unoptimized/*.jpg ../assets-unoptimized/*.png"
 for f in $FILES
 do
 	fn="${f/\.\.\/assets\-unoptimized/}"
-	fn="${fn/\.\.\/assets\-optimized/}"
+	fn="${fn/\.\.\/assets\-unoptimized/}"
 
 	NUMBER_OF_COLORS=$(identify -format '%k' $f)
 	NUMBER_OF_COLORS=`expr $NUMBER_OF_COLORS \* 10`
 
-	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 10/300/$fn
-	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 10/600/$fn
-	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.045 -dither None -posterize 136 -quality 82 -define png:preserve-colormap=true -colors $NUMBER_OF_COLORS -interlace none 10/1200/$fn
+	convert $f -filter Triangle -thumbnail 300 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 10/300/$fn
+	convert $f -filter Triangle -thumbnail 600 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 10/600/$fn
+	convert $f -filter Triangle -thumbnail 1200 -unsharp 0.25x0.25+9.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -colors $NUMBER_OF_COLORS -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB 10/1200/$fn
 done
-
-
-# optimize
-imageoptim -d 1 -q
-imageoptim -d 1 -q
-imageoptim -d 1 -q
-
-imageoptim -d 2 -q
-imageoptim -d 2 -q
-imageoptim -d 2 -q
-
-imageoptim -d 3 -q
-imageoptim -d 3 -q
-imageoptim -d 3 -q
-
-imageoptim -d 4 -q
-imageoptim -d 4 -q
-imageoptim -d 4 -q
-
-imageoptim -d 5 -q
-imageoptim -d 5 -q
-imageoptim -d 5 -q
-
-imageoptim -d 6 -q
-imageoptim -d 6 -q
-imageoptim -d 6 -q
-
-imageoptim -d 7 -q
-imageoptim -d 7 -q
-imageoptim -d 7 -q
-
-imageoptim -d 8 -q
-imageoptim -d 8 -q
-imageoptim -d 8 -q
-
-imageoptim -d 9 -q
-imageoptim -d 9 -q
-imageoptim -d 9 -q
-
-imageoptim -d 10 -q
-imageoptim -d 10 -q
-imageoptim -d 10 -q
 
 
 # calculate file sizes
