@@ -1,3 +1,3 @@
 # Test 61: filter:lobes
 
-* No effect
+* No win here
