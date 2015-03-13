@@ -1,0 +1,1794 @@
+desc: (none)
+cmd: convert ../assets-unoptimized/1A-3.jpg -filter Triangle -define filter:support=2.0 -thumbnail 600 -unsharp 0.25x0.25+8.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -define jpeg:fancy-upsampling=off -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB -strip default-convert/600//1A-3.jpg
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=1
+#-----------
+time=63402614
+mem_heap_B=8
+mem_heap_extra_B=16
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=2
+#-----------
+time=79346660
+mem_heap_B=872672
+mem_heap_extra_B=920
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=3
+#-----------
+time=104369295
+mem_heap_B=1220235
+mem_heap_extra_B=39733
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=4
+#-----------
+time=1562233869
+mem_heap_B=67063891
+mem_heap_extra_B=39741
+mem_stacks_B=0
+heap_tree=detailed
+n2: 67063891 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 65851584 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n1: 65843712 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 65843712 0x1000288AC: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 65843712 0x1000230F3: QueueAuthenticPixelCacheNexus (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 65843712 0x100028A2D: QueueAuthenticPixels (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 65843712 0x1089591A7: ???
+       n1: 65843712 0x10004B9BB: ReadImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 65843712 0x10004C800: ReadImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+         n1: 65843712 0x1001C55D7: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 65843712 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n0: 65843712 0x100003EF2: main (in /usr/local/bin/convert)
+  n0: 7872 in 2 places, all below massif's threshold (1.00%)
+ n0: 1212307 in 134 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=5
+#-----------
+time=1563555420
+mem_heap_B=67027315
+mem_heap_extra_B=42717
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=6
+#-----------
+time=1645163289
+mem_heap_B=154900939
+mem_heap_extra_B=43053
+mem_stacks_B=0
+heap_tree=detailed
+n2: 154900939 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 153684096 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n1: 153683712 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n2: 153683712 0x1000288AC: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 87840000 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 87840000 0x10002A82F: AcquireAuthenticCacheView (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 87840000 0x100117613: SampleImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 87840000 0x100119457: ThumbnailImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 87840000 0x100229BEF: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 87840000 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 87840000 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 87840000 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 87840000 0x100003EF2: main (in /usr/local/bin/convert)
+    n1: 65843712 0x1000230F3: QueueAuthenticPixelCacheNexus (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 65843712 0x100028A2D: QueueAuthenticPixels (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 65843712 0x1089591A7: ???
+       n1: 65843712 0x10004B9BB: ReadImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 65843712 0x10004C800: ReadImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+         n1: 65843712 0x1001C55D7: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 65843712 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n0: 65843712 0x100003EF2: main (in /usr/local/bin/convert)
+  n0: 384 in 3 places, all below massif's threshold (1.00%)
+ n0: 1216843 in 139 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=7
+#-----------
+time=1645596122
+mem_heap_B=172630183
+mem_heap_extra_B=49537
+mem_stacks_B=0
+heap_tree=detailed
+n2: 172630183 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 171252480 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n1: 171251712 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n2: 171251712 0x1000288AC: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n2: 105408000 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 87840000 0x10002A82F: AcquireAuthenticCacheView (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 87840000 0x100117613: SampleImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 87840000 0x100119457: ThumbnailImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 87840000 0x100229BEF: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 87840000 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 87840000 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 87840000 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 87840000 0x100003EF2: main (in /usr/local/bin/convert)
+     n1: 17568000 0x100116854: VerticalFilter (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 17568000 0x1001150E6: ResizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 17568000 0x100119489: ThumbnailImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 17568000 0x100229BEF: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 17568000 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 17568000 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 17568000 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 17568000 0x100003EF2: main (in /usr/local/bin/convert)
+    n1: 65843712 0x1000230F3: QueueAuthenticPixelCacheNexus (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 65843712 0x100028A2D: QueueAuthenticPixels (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 65843712 0x1089591A7: ???
+       n1: 65843712 0x10004B9BB: ReadImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 65843712 0x10004C800: ReadImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+         n1: 65843712 0x1001C55D7: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 65843712 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n0: 65843712 0x100003EF2: main (in /usr/local/bin/convert)
+  n0: 768 in 4 places, all below massif's threshold (1.00%)
+ n0: 1377703 in 141 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=8
+#-----------
+time=2468936689
+mem_heap_B=172629943
+mem_heap_extra_B=49505
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=9
+#-----------
+time=2468967373
+mem_heap_B=176143783
+mem_heap_extra_B=49561
+mem_stacks_B=0
+heap_tree=peak
+n2: 176143783 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 174766080 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n1: 174765312 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n2: 174765312 0x1000288AC: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n3: 108921600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 87840000 0x10002A82F: AcquireAuthenticCacheView (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 87840000 0x100117613: SampleImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 87840000 0x100119457: ThumbnailImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 87840000 0x100229BEF: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 87840000 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 87840000 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 87840000 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 87840000 0x100003EF2: main (in /usr/local/bin/convert)
+     n1: 17568000 0x100116854: VerticalFilter (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 17568000 0x1001150E6: ResizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 17568000 0x100119489: ThumbnailImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 17568000 0x100229BEF: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 17568000 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 17568000 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 17568000 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 17568000 0x100003EF2: main (in /usr/local/bin/convert)
+     n1: 3513600 0x100115C23: HorizontalFilter (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x10011510A: ResizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 3513600 0x100119489: ThumbnailImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 3513600 0x100229BEF: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+    n1: 65843712 0x1000230F3: QueueAuthenticPixelCacheNexus (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 65843712 0x100028A2D: QueueAuthenticPixels (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 65843712 0x1089591A7: ???
+       n1: 65843712 0x10004B9BB: ReadImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 65843712 0x10004C800: ReadImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+         n1: 65843712 0x1001C55D7: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 65843712 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n0: 65843712 0x100003EF2: main (in /usr/local/bin/convert)
+  n0: 768 in 4 places, all below massif's threshold (1.00%)
+ n0: 1377703 in 141 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=10
+#-----------
+time=2469564036
+mem_heap_B=176149519
+mem_heap_extra_B=49585
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=11
+#-----------
+time=2681475369
+mem_heap_B=176260751
+mem_heap_extra_B=49569
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=12
+#-----------
+time=2718630502
+mem_heap_B=8120513
+mem_heap_extra_B=43767
+mem_stacks_B=0
+heap_tree=detailed
+n5: 8120513 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 7032640 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n2: 7027200 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n2: 3513600 0x1000288AC: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n2: 3513600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 3513600 0x100115C23: HorizontalFilter (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x10011510A: ResizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 3513600 0x100119489: ThumbnailImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 3513600 0x100229BEF: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 3513600 0x1000287BB: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 3513600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 3513600 0x1000CCE94: MorphologyApply (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x100079296: BlurImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 3513600 0x100080DCC: UnsharpMaskImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 3513600 0x10022B8AA: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+  n0: 5440 in 6 places, all below massif's threshold (1.00%)
+ n1: 530480 0x1009A1F93: _NXMapRehash(_NXMapTable*) (in /usr/lib/libobjc.A.dylib)
+  n2: 530480 0x1009A1CA7: NXMapInsert (in /usr/lib/libobjc.A.dylib)
+   n2: 524304 0x1009B804F: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+    n1: 524304 0x1009A05CD: _read_images (in /usr/lib/libobjc.A.dylib)
+     n1: 524304 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+      n1: 524304 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+       n1: 524304 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+        n1: 524304 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+         n1: 524304 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+          n1: 524304 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+           n1: 524304 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 524304 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+             n1: 524304 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+              n1: 524304 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 524304 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                n1: 524304 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 524304 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 524304 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                   n1: 524304 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                    n1: 524304 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                     n1: 524304 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                      n1: 524304 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                       n1: 524304 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                        n1: 524304 0x22: ???
+                         n1: 524304 0x104805881: ???
+                          n1: 524304 0x104805889: ???
+                           n1: 524304 0x1048058A8: ???
+                            n1: 524304 0x1048058B0: ???
+                             n1: 524304 0x1048058B9: ???
+                              n0: 524304 0x1048058C1: ???
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+   n0: 6176 in 3 places, all below massif's threshold (1.00%)
+ n0: 380045 in 140 places, all below massif's threshold (1.00%)
+ n1: 91380 0x10070F035: reallocf (in /usr/lib/system/libsystem_c.dylib)
+  n1: 91380 0x1007132E3: _Read_RuneMagi (in /usr/lib/system/libsystem_c.dylib)
+   n1: 91380 0x1006E1CDC: __setrunelocale (in /usr/lib/system/libsystem_c.dylib)
+    n1: 91380 0x1006E21E0: __wrap_setrunelocale (in /usr/lib/system/libsystem_c.dylib)
+     n1: 91380 0x1006E1A9E: loadlocale (in /usr/lib/system/libsystem_c.dylib)
+      n1: 91380 0x1006E178E: setlocale (in /usr/lib/system/libsystem_c.dylib)
+       n1: 91380 0x1002272D4: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+        n0: 91380 0x100003EF2: main (in /usr/local/bin/convert)
+ n1: 85968 0x1009A5304: _memdup_internal (in /usr/lib/libobjc.A.dylib)
+  n1: 85968 0x1009A5195: fixupMethodList(method_list_t*, bool, bool) (in /usr/lib/libobjc.A.dylib)
+   n1: 85968 0x1009B5D4F: attachMethodLists(objc_class*, method_list_t**, int, bool, bool, bool) (in /usr/lib/libobjc.A.dylib)
+    n0: 85968 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=13
+#-----------
+time=2740844066
+mem_heap_B=8120513
+mem_heap_extra_B=43767
+mem_stacks_B=0
+heap_tree=detailed
+n5: 8120513 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 7032640 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n2: 7027200 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n2: 3513600 0x1000288AC: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n2: 3513600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 3513600 0x100115C23: HorizontalFilter (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x10011510A: ResizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 3513600 0x100119489: ThumbnailImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 3513600 0x100229BEF: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 3513600 0x1000287BB: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 3513600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 3513600 0x1000CCE94: MorphologyApply (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x100079296: BlurImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 3513600 0x100080DCC: UnsharpMaskImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 3513600 0x10022B8AA: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+  n0: 5440 in 6 places, all below massif's threshold (1.00%)
+ n1: 530480 0x1009A1F93: _NXMapRehash(_NXMapTable*) (in /usr/lib/libobjc.A.dylib)
+  n2: 530480 0x1009A1CA7: NXMapInsert (in /usr/lib/libobjc.A.dylib)
+   n2: 524304 0x1009B804F: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+    n1: 524304 0x1009A05CD: _read_images (in /usr/lib/libobjc.A.dylib)
+     n1: 524304 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+      n1: 524304 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+       n1: 524304 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+        n1: 524304 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+         n1: 524304 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+          n1: 524304 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+           n1: 524304 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 524304 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+             n1: 524304 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+              n1: 524304 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 524304 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                n1: 524304 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 524304 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 524304 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                   n1: 524304 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                    n1: 524304 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                     n1: 524304 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                      n1: 524304 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                       n1: 524304 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                        n1: 524304 0x22: ???
+                         n1: 524304 0x104805881: ???
+                          n1: 524304 0x104805889: ???
+                           n1: 524304 0x1048058A8: ???
+                            n1: 524304 0x1048058B0: ???
+                             n1: 524304 0x1048058B9: ???
+                              n0: 524304 0x1048058C1: ???
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+   n0: 6176 in 3 places, all below massif's threshold (1.00%)
+ n0: 380045 in 140 places, all below massif's threshold (1.00%)
+ n1: 91380 0x10070F035: reallocf (in /usr/lib/system/libsystem_c.dylib)
+  n1: 91380 0x1007132E3: _Read_RuneMagi (in /usr/lib/system/libsystem_c.dylib)
+   n1: 91380 0x1006E1CDC: __setrunelocale (in /usr/lib/system/libsystem_c.dylib)
+    n1: 91380 0x1006E21E0: __wrap_setrunelocale (in /usr/lib/system/libsystem_c.dylib)
+     n1: 91380 0x1006E1A9E: loadlocale (in /usr/lib/system/libsystem_c.dylib)
+      n1: 91380 0x1006E178E: setlocale (in /usr/lib/system/libsystem_c.dylib)
+       n1: 91380 0x1002272D4: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+        n0: 91380 0x100003EF2: main (in /usr/local/bin/convert)
+ n1: 85968 0x1009A5304: _memdup_internal (in /usr/lib/libobjc.A.dylib)
+  n1: 85968 0x1009A5195: fixupMethodList(method_list_t*, bool, bool) (in /usr/lib/libobjc.A.dylib)
+   n1: 85968 0x1009B5D4F: attachMethodLists(objc_class*, method_list_t**, int, bool, bool, bool) (in /usr/lib/libobjc.A.dylib)
+    n0: 85968 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=14
+#-----------
+time=2777855515
+mem_heap_B=8120513
+mem_heap_extra_B=43767
+mem_stacks_B=0
+heap_tree=detailed
+n5: 8120513 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 7032640 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n2: 7027200 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n2: 3513600 0x1000288AC: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n2: 3513600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 3513600 0x100115C23: HorizontalFilter (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x10011510A: ResizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 3513600 0x100119489: ThumbnailImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 3513600 0x100229BEF: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+   n1: 3513600 0x1000287BB: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 3513600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 3513600 0x1000CCE94: MorphologyApply (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x100079296: BlurImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 3513600 0x100080DCC: UnsharpMaskImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 3513600 0x10022B8AA: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+  n0: 5440 in 6 places, all below massif's threshold (1.00%)
+ n1: 530480 0x1009A1F93: _NXMapRehash(_NXMapTable*) (in /usr/lib/libobjc.A.dylib)
+  n2: 530480 0x1009A1CA7: NXMapInsert (in /usr/lib/libobjc.A.dylib)
+   n2: 524304 0x1009B804F: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+    n1: 524304 0x1009A05CD: _read_images (in /usr/lib/libobjc.A.dylib)
+     n1: 524304 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+      n1: 524304 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+       n1: 524304 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+        n1: 524304 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+         n1: 524304 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+          n1: 524304 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+           n1: 524304 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 524304 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+             n1: 524304 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+              n1: 524304 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 524304 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                n1: 524304 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 524304 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 524304 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                   n1: 524304 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                    n1: 524304 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                     n1: 524304 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                      n1: 524304 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                       n1: 524304 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                        n1: 524304 0x22: ???
+                         n1: 524304 0x104805881: ???
+                          n1: 524304 0x104805889: ???
+                           n1: 524304 0x1048058A8: ???
+                            n1: 524304 0x1048058B0: ???
+                             n1: 524304 0x1048058B9: ???
+                              n0: 524304 0x1048058C1: ???
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+   n0: 6176 in 3 places, all below massif's threshold (1.00%)
+ n0: 380045 in 140 places, all below massif's threshold (1.00%)
+ n1: 91380 0x10070F035: reallocf (in /usr/lib/system/libsystem_c.dylib)
+  n1: 91380 0x1007132E3: _Read_RuneMagi (in /usr/lib/system/libsystem_c.dylib)
+   n1: 91380 0x1006E1CDC: __setrunelocale (in /usr/lib/system/libsystem_c.dylib)
+    n1: 91380 0x1006E21E0: __wrap_setrunelocale (in /usr/lib/system/libsystem_c.dylib)
+     n1: 91380 0x1006E1A9E: loadlocale (in /usr/lib/system/libsystem_c.dylib)
+      n1: 91380 0x1006E178E: setlocale (in /usr/lib/system/libsystem_c.dylib)
+       n1: 91380 0x1002272D4: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+        n0: 91380 0x100003EF2: main (in /usr/local/bin/convert)
+ n1: 85968 0x1009A5304: _memdup_internal (in /usr/lib/libobjc.A.dylib)
+  n1: 85968 0x1009A5195: fixupMethodList(method_list_t*, bool, bool) (in /usr/lib/libobjc.A.dylib)
+   n1: 85968 0x1009B5D4F: attachMethodLists(objc_class*, method_list_t**, int, bool, bool, bool) (in /usr/lib/libobjc.A.dylib)
+    n0: 85968 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=15
+#-----------
+time=2808599534
+mem_heap_B=11680706
+mem_heap_extra_B=47190
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=16
+#-----------
+time=2829855849
+mem_heap_B=11680706
+mem_heap_extra_B=47190
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=17
+#-----------
+time=2866116423
+mem_heap_B=11680706
+mem_heap_extra_B=47190
+mem_stacks_B=0
+heap_tree=detailed
+n3: 11680706 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 10553216 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n2: 10540800 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 7027200 0x1000287BB: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 7027200 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 7027200 0x1000CCE94: MorphologyApply (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 7027200 0x100079296: BlurImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 7027200 0x100080DCC: UnsharpMaskImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 7027200 0x10022B8AA: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 7027200 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 7027200 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 7027200 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 7027200 0x100003EF2: main (in /usr/local/bin/convert)
+   n2: 3513600 0x1000288AC: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n2: 3513600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 3513600 0x100115C23: HorizontalFilter (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x10011510A: ResizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 3513600 0x100119489: ThumbnailImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 3513600 0x100229BEF: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 12416 in 6 places, all below massif's threshold (1.00%)
+ n0: 597010 in 142 places, all below massif's threshold (1.00%)
+ n1: 530480 0x1009A1F93: _NXMapRehash(_NXMapTable*) (in /usr/lib/libobjc.A.dylib)
+  n2: 530480 0x1009A1CA7: NXMapInsert (in /usr/lib/libobjc.A.dylib)
+   n2: 524304 0x1009B804F: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+    n1: 524304 0x1009A05CD: _read_images (in /usr/lib/libobjc.A.dylib)
+     n1: 524304 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+      n1: 524304 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+       n1: 524304 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+        n1: 524304 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+         n1: 524304 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+          n1: 524304 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+           n1: 524304 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 524304 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+             n1: 524304 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+              n1: 524304 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 524304 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                n1: 524304 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 524304 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 524304 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                   n1: 524304 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                    n1: 524304 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                     n1: 524304 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                      n1: 524304 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                       n1: 524304 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                        n1: 524304 0x22: ???
+                         n1: 524304 0x104805881: ???
+                          n1: 524304 0x104805889: ???
+                           n1: 524304 0x1048058A8: ???
+                            n1: 524304 0x1048058B0: ???
+                             n1: 524304 0x1048058B9: ???
+                              n0: 524304 0x1048058C1: ???
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+   n0: 6176 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=18
+#-----------
+time=2890291599
+mem_heap_B=11680706
+mem_heap_extra_B=47190
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=19
+#-----------
+time=2907796461
+mem_heap_B=11680706
+mem_heap_extra_B=47190
+mem_stacks_B=0
+heap_tree=detailed
+n3: 11680706 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 10553216 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n2: 10540800 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 7027200 0x1000287BB: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 7027200 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 7027200 0x1000CCE94: MorphologyApply (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 7027200 0x100079296: BlurImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 7027200 0x100080DCC: UnsharpMaskImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 7027200 0x10022B8AA: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 7027200 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 7027200 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 7027200 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 7027200 0x100003EF2: main (in /usr/local/bin/convert)
+   n2: 3513600 0x1000288AC: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n2: 3513600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 3513600 0x100115C23: HorizontalFilter (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x10011510A: ResizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 3513600 0x100119489: ThumbnailImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 3513600 0x100229BEF: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 12416 in 6 places, all below massif's threshold (1.00%)
+ n0: 597010 in 142 places, all below massif's threshold (1.00%)
+ n1: 530480 0x1009A1F93: _NXMapRehash(_NXMapTable*) (in /usr/lib/libobjc.A.dylib)
+  n2: 530480 0x1009A1CA7: NXMapInsert (in /usr/lib/libobjc.A.dylib)
+   n2: 524304 0x1009B804F: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+    n1: 524304 0x1009A05CD: _read_images (in /usr/lib/libobjc.A.dylib)
+     n1: 524304 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+      n1: 524304 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+       n1: 524304 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+        n1: 524304 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+         n1: 524304 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+          n1: 524304 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+           n1: 524304 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 524304 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+             n1: 524304 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+              n1: 524304 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 524304 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                n1: 524304 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 524304 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 524304 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                   n1: 524304 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                    n1: 524304 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                     n1: 524304 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                      n1: 524304 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                       n1: 524304 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                        n1: 524304 0x22: ???
+                         n1: 524304 0x104805881: ???
+                          n1: 524304 0x104805889: ???
+                           n1: 524304 0x1048058A8: ???
+                            n1: 524304 0x1048058B0: ???
+                             n1: 524304 0x1048058B9: ???
+                              n0: 524304 0x1048058C1: ???
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+   n0: 6176 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=20
+#-----------
+time=2932806685
+mem_heap_B=11680706
+mem_heap_extra_B=47190
+mem_stacks_B=0
+heap_tree=detailed
+n3: 11680706 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 10553216 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n2: 10540800 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 7027200 0x1000287BB: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 7027200 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 7027200 0x1000CCE94: MorphologyApply (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 7027200 0x100079296: BlurImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 7027200 0x100080DCC: UnsharpMaskImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 7027200 0x10022B8AA: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 7027200 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 7027200 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 7027200 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 7027200 0x100003EF2: main (in /usr/local/bin/convert)
+   n2: 3513600 0x1000288AC: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n2: 3513600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 3513600 0x100115C23: HorizontalFilter (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x10011510A: ResizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 3513600 0x100119489: ThumbnailImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 3513600 0x100229BEF: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 12416 in 6 places, all below massif's threshold (1.00%)
+ n0: 597010 in 142 places, all below massif's threshold (1.00%)
+ n1: 530480 0x1009A1F93: _NXMapRehash(_NXMapTable*) (in /usr/lib/libobjc.A.dylib)
+  n2: 530480 0x1009A1CA7: NXMapInsert (in /usr/lib/libobjc.A.dylib)
+   n2: 524304 0x1009B804F: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+    n1: 524304 0x1009A05CD: _read_images (in /usr/lib/libobjc.A.dylib)
+     n1: 524304 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+      n1: 524304 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+       n1: 524304 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+        n1: 524304 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+         n1: 524304 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+          n1: 524304 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+           n1: 524304 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 524304 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+             n1: 524304 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+              n1: 524304 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 524304 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                n1: 524304 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 524304 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 524304 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                   n1: 524304 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                    n1: 524304 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                     n1: 524304 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                      n1: 524304 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                       n1: 524304 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                        n1: 524304 0x22: ???
+                         n1: 524304 0x104805881: ???
+                          n1: 524304 0x104805889: ???
+                           n1: 524304 0x1048058A8: ???
+                            n1: 524304 0x1048058B0: ???
+                             n1: 524304 0x1048058B9: ???
+                              n0: 524304 0x1048058C1: ???
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+   n0: 6176 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=21
+#-----------
+time=2959903982
+mem_heap_B=11680706
+mem_heap_extra_B=47190
+mem_stacks_B=0
+heap_tree=detailed
+n3: 11680706 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 10553216 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n2: 10540800 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 7027200 0x1000287BB: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 7027200 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 7027200 0x1000CCE94: MorphologyApply (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 7027200 0x100079296: BlurImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 7027200 0x100080DCC: UnsharpMaskImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 7027200 0x10022B8AA: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 7027200 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 7027200 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 7027200 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 7027200 0x100003EF2: main (in /usr/local/bin/convert)
+   n2: 3513600 0x1000288AC: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n2: 3513600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 3513600 0x100115C23: HorizontalFilter (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x10011510A: ResizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 3513600 0x100119489: ThumbnailImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 3513600 0x100229BEF: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 12416 in 6 places, all below massif's threshold (1.00%)
+ n0: 597010 in 142 places, all below massif's threshold (1.00%)
+ n1: 530480 0x1009A1F93: _NXMapRehash(_NXMapTable*) (in /usr/lib/libobjc.A.dylib)
+  n2: 530480 0x1009A1CA7: NXMapInsert (in /usr/lib/libobjc.A.dylib)
+   n2: 524304 0x1009B804F: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+    n1: 524304 0x1009A05CD: _read_images (in /usr/lib/libobjc.A.dylib)
+     n1: 524304 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+      n1: 524304 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+       n1: 524304 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+        n1: 524304 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+         n1: 524304 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+          n1: 524304 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+           n1: 524304 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 524304 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+             n1: 524304 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+              n1: 524304 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 524304 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                n1: 524304 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 524304 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 524304 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                   n1: 524304 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                    n1: 524304 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                     n1: 524304 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                      n1: 524304 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                       n1: 524304 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                        n1: 524304 0x22: ???
+                         n1: 524304 0x104805881: ???
+                          n1: 524304 0x104805889: ???
+                           n1: 524304 0x1048058A8: ???
+                            n1: 524304 0x1048058B0: ???
+                             n1: 524304 0x1048058B9: ???
+                              n0: 524304 0x1048058C1: ???
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+   n0: 6176 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=22
+#-----------
+time=2980747546
+mem_heap_B=11680706
+mem_heap_extra_B=47190
+mem_stacks_B=0
+heap_tree=detailed
+n3: 11680706 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 10553216 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n2: 10540800 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 7027200 0x1000287BB: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 7027200 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 7027200 0x1000CCE94: MorphologyApply (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 7027200 0x100079296: BlurImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 7027200 0x100080DCC: UnsharpMaskImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 7027200 0x10022B8AA: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 7027200 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 7027200 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 7027200 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 7027200 0x100003EF2: main (in /usr/local/bin/convert)
+   n2: 3513600 0x1000288AC: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n2: 3513600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 3513600 0x100115C23: HorizontalFilter (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x10011510A: ResizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 3513600 0x100119489: ThumbnailImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 3513600 0x100229BEF: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 12416 in 6 places, all below massif's threshold (1.00%)
+ n0: 597010 in 142 places, all below massif's threshold (1.00%)
+ n1: 530480 0x1009A1F93: _NXMapRehash(_NXMapTable*) (in /usr/lib/libobjc.A.dylib)
+  n2: 530480 0x1009A1CA7: NXMapInsert (in /usr/lib/libobjc.A.dylib)
+   n2: 524304 0x1009B804F: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+    n1: 524304 0x1009A05CD: _read_images (in /usr/lib/libobjc.A.dylib)
+     n1: 524304 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+      n1: 524304 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+       n1: 524304 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+        n1: 524304 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+         n1: 524304 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+          n1: 524304 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+           n1: 524304 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 524304 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+             n1: 524304 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+              n1: 524304 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 524304 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                n1: 524304 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 524304 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 524304 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                   n1: 524304 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                    n1: 524304 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                     n1: 524304 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                      n1: 524304 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                       n1: 524304 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                        n1: 524304 0x22: ???
+                         n1: 524304 0x104805881: ???
+                          n1: 524304 0x104805889: ???
+                           n1: 524304 0x1048058A8: ???
+                            n1: 524304 0x1048058B0: ???
+                             n1: 524304 0x1048058B9: ???
+                              n0: 524304 0x1048058C1: ???
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+   n0: 6176 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=23
+#-----------
+time=3001584640
+mem_heap_B=11680706
+mem_heap_extra_B=47190
+mem_stacks_B=0
+heap_tree=detailed
+n3: 11680706 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 10553216 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n2: 10540800 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 7027200 0x1000287BB: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 7027200 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 7027200 0x1000CCE94: MorphologyApply (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 7027200 0x100079296: BlurImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 7027200 0x100080DCC: UnsharpMaskImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 7027200 0x10022B8AA: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 7027200 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 7027200 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 7027200 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 7027200 0x100003EF2: main (in /usr/local/bin/convert)
+   n2: 3513600 0x1000288AC: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n2: 3513600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 3513600 0x100115C23: HorizontalFilter (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x10011510A: ResizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 3513600 0x100119489: ThumbnailImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 3513600 0x100229BEF: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 12416 in 6 places, all below massif's threshold (1.00%)
+ n0: 597010 in 142 places, all below massif's threshold (1.00%)
+ n1: 530480 0x1009A1F93: _NXMapRehash(_NXMapTable*) (in /usr/lib/libobjc.A.dylib)
+  n2: 530480 0x1009A1CA7: NXMapInsert (in /usr/lib/libobjc.A.dylib)
+   n2: 524304 0x1009B804F: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+    n1: 524304 0x1009A05CD: _read_images (in /usr/lib/libobjc.A.dylib)
+     n1: 524304 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+      n1: 524304 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+       n1: 524304 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+        n1: 524304 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+         n1: 524304 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+          n1: 524304 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+           n1: 524304 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 524304 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+             n1: 524304 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+              n1: 524304 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 524304 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                n1: 524304 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 524304 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 524304 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                   n1: 524304 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                    n1: 524304 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                     n1: 524304 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                      n1: 524304 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                       n1: 524304 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                        n1: 524304 0x22: ???
+                         n1: 524304 0x104805881: ???
+                          n1: 524304 0x104805889: ???
+                           n1: 524304 0x1048058A8: ???
+                            n1: 524304 0x1048058B0: ???
+                             n1: 524304 0x1048058B9: ???
+                              n0: 524304 0x1048058C1: ???
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+   n0: 6176 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=24
+#-----------
+time=3022422331
+mem_heap_B=11680706
+mem_heap_extra_B=47190
+mem_stacks_B=0
+heap_tree=detailed
+n3: 11680706 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 10553216 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n2: 10540800 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 7027200 0x1000287BB: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 7027200 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 7027200 0x1000CCE94: MorphologyApply (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 7027200 0x100079296: BlurImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 7027200 0x100080DCC: UnsharpMaskImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 7027200 0x10022B8AA: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 7027200 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 7027200 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 7027200 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 7027200 0x100003EF2: main (in /usr/local/bin/convert)
+   n2: 3513600 0x1000288AC: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n2: 3513600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 3513600 0x100115C23: HorizontalFilter (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x10011510A: ResizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 3513600 0x100119489: ThumbnailImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 3513600 0x100229BEF: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+     n0: 0 in 2 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 12416 in 6 places, all below massif's threshold (1.00%)
+ n0: 597010 in 142 places, all below massif's threshold (1.00%)
+ n1: 530480 0x1009A1F93: _NXMapRehash(_NXMapTable*) (in /usr/lib/libobjc.A.dylib)
+  n2: 530480 0x1009A1CA7: NXMapInsert (in /usr/lib/libobjc.A.dylib)
+   n2: 524304 0x1009B804F: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+    n1: 524304 0x1009A05CD: _read_images (in /usr/lib/libobjc.A.dylib)
+     n1: 524304 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+      n1: 524304 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+       n1: 524304 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+        n1: 524304 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+         n1: 524304 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+          n1: 524304 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+           n1: 524304 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 524304 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+             n1: 524304 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+              n1: 524304 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 524304 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                n1: 524304 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 524304 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 524304 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                   n1: 524304 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                    n1: 524304 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                     n1: 524304 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                      n1: 524304 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                       n1: 524304 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                        n1: 524304 0x22: ???
+                         n1: 524304 0x104805881: ???
+                          n1: 524304 0x104805889: ???
+                           n1: 524304 0x1048058A8: ???
+                            n1: 524304 0x1048058B0: ???
+                             n1: 524304 0x1048058B9: ???
+                              n0: 524304 0x1048058C1: ???
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+   n0: 6176 in 3 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=25
+#-----------
+time=3050374991
+mem_heap_B=8115265
+mem_heap_extra_B=43519
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=26
+#-----------
+time=3088488260
+mem_heap_B=8115153
+mem_heap_extra_B=43527
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=27
+#-----------
+time=3118472026
+mem_heap_B=4561744
+mem_heap_extra_B=40024
+mem_stacks_B=0
+heap_tree=detailed
+n7: 4561744 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 3513792 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n2: 3513600 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 3513600 0x1000287BB: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 3513600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 3513600 0x1000CCE94: MorphologyApply (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x100079296: BlurImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 3513600 0x100080DCC: UnsharpMaskImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 3513600 0x10022B8AA: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 192 in 6 places, all below massif's threshold (1.00%)
+ n1: 530480 0x1009A1F93: _NXMapRehash(_NXMapTable*) (in /usr/lib/libobjc.A.dylib)
+  n2: 530480 0x1009A1CA7: NXMapInsert (in /usr/lib/libobjc.A.dylib)
+   n2: 524304 0x1009B804F: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+    n1: 524304 0x1009A05CD: _read_images (in /usr/lib/libobjc.A.dylib)
+     n1: 524304 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+      n1: 524304 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+       n1: 524304 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+        n1: 524304 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+         n1: 524304 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+          n1: 524304 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+           n1: 524304 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 524304 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+             n1: 524304 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+              n1: 524304 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 524304 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                n1: 524304 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 524304 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 524304 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                   n1: 524304 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                    n1: 524304 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                     n1: 524304 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                      n1: 524304 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                       n1: 524304 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                        n1: 524304 0x22: ???
+                         n1: 524304 0x104805881: ???
+                          n1: 524304 0x104805889: ???
+                           n1: 524304 0x1048058A8: ???
+                            n1: 524304 0x1048058B0: ???
+                             n1: 524304 0x1048058B9: ???
+                              n0: 524304 0x1048058C1: ???
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+   n0: 6176 in 3 places, all below massif's threshold (1.00%)
+ n0: 222116 in 138 places, all below massif's threshold (1.00%)
+ n1: 91380 0x10070F035: reallocf (in /usr/lib/system/libsystem_c.dylib)
+  n1: 91380 0x1007132E3: _Read_RuneMagi (in /usr/lib/system/libsystem_c.dylib)
+   n1: 91380 0x1006E1CDC: __setrunelocale (in /usr/lib/system/libsystem_c.dylib)
+    n1: 91380 0x1006E21E0: __wrap_setrunelocale (in /usr/lib/system/libsystem_c.dylib)
+     n1: 91380 0x1006E1A9E: loadlocale (in /usr/lib/system/libsystem_c.dylib)
+      n1: 91380 0x1006E178E: setlocale (in /usr/lib/system/libsystem_c.dylib)
+       n1: 91380 0x1002272D4: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+        n0: 91380 0x100003EF2: main (in /usr/local/bin/convert)
+ n1: 85968 0x1009A5304: _memdup_internal (in /usr/lib/libobjc.A.dylib)
+  n1: 85968 0x1009A5195: fixupMethodList(method_list_t*, bool, bool) (in /usr/lib/libobjc.A.dylib)
+   n2: 85968 0x1009B5D4F: attachMethodLists(objc_class*, method_list_t**, int, bool, bool, bool) (in /usr/lib/libobjc.A.dylib)
+    n1: 62768 0x1009B0545: realizeClass(objc_class*) (in /usr/lib/libobjc.A.dylib)
+     n0: 62768 in 6 places, all below massif's threshold (1.00%)
+    n0: 23200 in 1 place, below massif's threshold (1.00%)
+ n2: 67632 0x1009A0EA2: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
+  n1: 65552 0x1009A0185: _read_images (in /usr/lib/libobjc.A.dylib)
+   n1: 65552 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+    n1: 65552 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+     n1: 65552 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+      n1: 65552 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+       n1: 65552 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+        n1: 65552 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+         n1: 65552 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 65552 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 65552 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 65552 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 65552 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 65552 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 65552 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 65552 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 65552 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 65552 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 65552 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 65552 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                     n1: 65552 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                      n1: 65552 0x22: ???
+                       n1: 65552 0x104805881: ???
+                        n1: 65552 0x104805889: ???
+                         n1: 65552 0x1048058A8: ???
+                          n1: 65552 0x1048058B0: ???
+                           n1: 65552 0x1048058B9: ???
+                            n1: 65552 0x1048058C1: ???
+                             n1: 65552 0x1048058D4: ???
+                              n0: 65552 0x1048058DF: ???
+  n0: 2080 in 5 places, all below massif's threshold (1.00%)
+ n1: 50376 0x1000B03F9: AcquireImageInfo (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n0: 50376 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=28
+#-----------
+time=3147076921
+mem_heap_B=6037072
+mem_heap_extra_B=40192
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=29
+#-----------
+time=3184970495
+mem_heap_B=7880352
+mem_heap_extra_B=40288
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=30
+#-----------
+time=3212446859
+mem_heap_B=8617664
+mem_heap_extra_B=40320
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=31
+#-----------
+time=3241751176
+mem_heap_B=10092288
+mem_heap_extra_B=40400
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=32
+#-----------
+time=3270605896
+mem_heap_B=11566912
+mem_heap_extra_B=40464
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=33
+#-----------
+time=3292135199
+mem_heap_B=12672880
+mem_heap_extra_B=40512
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=34
+#-----------
+time=3319164699
+mem_heap_B=13778848
+mem_heap_extra_B=40560
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=35
+#-----------
+time=3342625966
+mem_heap_B=15253472
+mem_heap_extra_B=40640
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=36
+#-----------
+time=3379761548
+mem_heap_B=16728096
+mem_heap_extra_B=40704
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=37
+#-----------
+time=3403266265
+mem_heap_B=17465408
+mem_heap_extra_B=40736
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=38
+#-----------
+time=3423020004
+mem_heap_B=18202720
+mem_heap_extra_B=40768
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=39
+#-----------
+time=3458874391
+mem_heap_B=19308688
+mem_heap_extra_B=40816
+mem_stacks_B=0
+heap_tree=detailed
+n4: 19308688 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 14745600 0x1000F2040: GetNodeInfo (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n1: 14376960 0x1000EE2A1: ClassifyImageColors (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 14376960 0x1000ECE5F: QuantizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 14376960 0x1000EDA82: PosterizeImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 14376960 0x10022B6A3: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+      n1: 14376960 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+       n1: 14376960 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+        n1: 14376960 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n0: 14376960 0x100003EF2: main (in /usr/local/bin/convert)
+  n1: 368640 0x1000EDB6E: GetCubeInfo (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 368640 0x1000ECE42: QuantizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 368640 0x1000EDA82: PosterizeImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 368640 0x10022B6A3: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+      n1: 368640 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+       n1: 368640 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+        n1: 368640 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n0: 368640 0x100003EF2: main (in /usr/local/bin/convert)
+ n2: 3513792 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n2: 3513600 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 3513600 0x1000287BB: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 3513600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 3513600 0x1000CCE94: MorphologyApply (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x100079296: BlurImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 3513600 0x100080DCC: UnsharpMaskImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 3513600 0x10022B8AA: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 192 in 6 places, all below massif's threshold (1.00%)
+ n1: 530480 0x1009A1F93: _NXMapRehash(_NXMapTable*) (in /usr/lib/libobjc.A.dylib)
+  n2: 530480 0x1009A1CA7: NXMapInsert (in /usr/lib/libobjc.A.dylib)
+   n2: 524304 0x1009B804F: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+    n1: 524304 0x1009A05CD: _read_images (in /usr/lib/libobjc.A.dylib)
+     n1: 524304 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+      n1: 524304 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+       n1: 524304 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+        n1: 524304 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+         n1: 524304 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+          n1: 524304 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+           n1: 524304 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 524304 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+             n1: 524304 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+              n1: 524304 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 524304 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                n1: 524304 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 524304 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 524304 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                   n1: 524304 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                    n1: 524304 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                     n1: 524304 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                      n1: 524304 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                       n1: 524304 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                        n1: 524304 0x22: ???
+                         n1: 524304 0x104805881: ???
+                          n1: 524304 0x104805889: ???
+                           n1: 524304 0x1048058A8: ???
+                            n1: 524304 0x1048058B0: ???
+                             n1: 524304 0x1048058B9: ???
+                              n0: 524304 0x1048058C1: ???
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+   n0: 6176 in 3 places, all below massif's threshold (1.00%)
+ n0: 518816 in 145 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=40
+#-----------
+time=3484778182
+mem_heap_B=20046000
+mem_heap_extra_B=40848
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=41
+#-----------
+time=3500337314
+mem_heap_B=20414656
+mem_heap_extra_B=40880
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=42
+#-----------
+time=3524135522
+mem_heap_B=20783312
+mem_heap_extra_B=40896
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=43
+#-----------
+time=3555577435
+mem_heap_B=21889280
+mem_heap_extra_B=40944
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=44
+#-----------
+time=3591385850
+mem_heap_B=23363904
+mem_heap_extra_B=41008
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=45
+#-----------
+time=3630323838
+mem_heap_B=24838528
+mem_heap_extra_B=41072
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=46
+#-----------
+time=3656886885
+mem_heap_B=26719840
+mem_heap_extra_B=40960
+mem_stacks_B=0
+heap_tree=detailed
+n5: 26719840 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 21749760 0x1000F2040: GetNodeInfo (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n1: 21381120 0x1000EE2A1: ClassifyImageColors (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 21381120 0x1000ECE5F: QuantizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 21381120 0x1000EDA82: PosterizeImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 21381120 0x10022B6A3: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+      n1: 21381120 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+       n1: 21381120 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+        n1: 21381120 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n0: 21381120 0x100003EF2: main (in /usr/local/bin/convert)
+  n1: 368640 0x1000EDB6E: GetCubeInfo (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 368640 0x1000ECE42: QuantizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 368640 0x1000EDA82: PosterizeImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 368640 0x10022B6A3: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+      n1: 368640 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+       n1: 368640 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+        n1: 368640 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n0: 368640 0x100003EF2: main (in /usr/local/bin/convert)
+ n2: 3513664 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n2: 3513600 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 3513600 0x1000287BB: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 3513600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 3513600 0x1000CCE94: MorphologyApply (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x100079296: BlurImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 3513600 0x100080DCC: UnsharpMaskImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+        n1: 3513600 0x10022B8AA: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+           n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+            n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 6 places, all below massif's threshold (1.00%)
+ n1: 530480 0x1009A1F93: _NXMapRehash(_NXMapTable*) (in /usr/lib/libobjc.A.dylib)
+  n2: 530480 0x1009A1CA7: NXMapInsert (in /usr/lib/libobjc.A.dylib)
+   n2: 524304 0x1009B804F: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+    n1: 524304 0x1009A05CD: _read_images (in /usr/lib/libobjc.A.dylib)
+     n1: 524304 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+      n1: 524304 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+       n1: 524304 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+        n1: 524304 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+         n1: 524304 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+          n1: 524304 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+           n1: 524304 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 524304 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+             n1: 524304 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+              n1: 524304 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 524304 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                n1: 524304 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 524304 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 524304 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                   n1: 524304 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                    n1: 524304 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                     n1: 524304 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                      n1: 524304 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                       n1: 524304 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                        n1: 524304 0x22: ???
+                         n1: 524304 0x104805881: ???
+                          n1: 524304 0x104805889: ???
+                           n1: 524304 0x1048058A8: ???
+                            n1: 524304 0x1048058B0: ???
+                             n1: 524304 0x1048058B9: ???
+                              n0: 524304 0x1048058C1: ???
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+   n0: 6176 in 3 places, all below massif's threshold (1.00%)
+ n0: 519072 in 145 places, all below massif's threshold (1.00%)
+ n1: 406864 0x1000335AD: AcquireImageColormap (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n1: 406864 0x1000EF1C7: AssignImageColors (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 406864 0x1000ECE7C: QuantizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 406864 0x1000EDA82: PosterizeImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 406864 0x10022B6A3: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+      n1: 406864 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+       n1: 406864 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+        n1: 406864 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n0: 406864 0x100003EF2: main (in /usr/local/bin/convert)
+#-----------
+snapshot=47
+#-----------
+time=3676800260
+mem_heap_B=27598248
+mem_heap_extra_B=41080
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=48
+#-----------
+time=5007439769
+mem_heap_B=27598312
+mem_heap_extra_B=41168
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=49
+#-----------
+time=5027881150
+mem_heap_B=5062687
+mem_heap_extra_B=52953
+mem_stacks_B=0
+heap_tree=detailed
+n9: 5062687 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n2: 3513664 0x1000C32BB: AcquireAlignedMemory (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n2: 3513600 0x100027033: OpenPixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n2: 3513600 0x1000288AC: GetImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n2: 3513600 0x10002A62B: SyncImagePixelCache (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 3513600 0x10002CCAC: SetImageAlphaChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 3513600 0x10022AC19: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+       n1: 3513600 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+        n1: 3513600 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n1: 3513600 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+          n0: 3513600 0x100003EF2: main (in /usr/local/bin/convert)
+     n0: 0 in 4 places, all below massif's threshold (1.00%)
+    n0: 0 in 1 place, below massif's threshold (1.00%)
+   n0: 0 in 1 place, below massif's threshold (1.00%)
+  n0: 64 in 6 places, all below massif's threshold (1.00%)
+ n1: 530480 0x1009A1F93: _NXMapRehash(_NXMapTable*) (in /usr/lib/libobjc.A.dylib)
+  n2: 530480 0x1009A1CA7: NXMapInsert (in /usr/lib/libobjc.A.dylib)
+   n2: 524304 0x1009B804F: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+    n1: 524304 0x1009A05CD: _read_images (in /usr/lib/libobjc.A.dylib)
+     n1: 524304 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+      n1: 524304 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+       n1: 524304 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+        n1: 524304 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+         n1: 524304 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+          n1: 524304 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+           n1: 524304 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 524304 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+             n1: 524304 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+              n1: 524304 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 524304 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                n1: 524304 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 524304 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 524304 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                   n1: 524304 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                    n1: 524304 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                     n1: 524304 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                      n1: 524304 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                       n1: 524304 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                        n1: 524304 0x22: ???
+                         n1: 524304 0x104805881: ???
+                          n1: 524304 0x104805889: ???
+                           n1: 524304 0x1048058A8: ???
+                            n1: 524304 0x1048058B0: ???
+                             n1: 524304 0x1048058B9: ???
+                              n0: 524304 0x1048058C1: ???
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+   n0: 6176 in 3 places, all below massif's threshold (1.00%)
+ n1: 406864 0x1000335AD: AcquireImageColormap (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n1: 406864 0x1000EF1C7: AssignImageColors (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 406864 0x1000ECE7C: QuantizeImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 406864 0x1000EDA82: PosterizeImageChannel (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 406864 0x10022B6A3: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+      n1: 406864 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+       n1: 406864 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+        n1: 406864 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n0: 406864 0x100003EF2: main (in /usr/local/bin/convert)
+ n0: 223595 in 142 places, all below massif's threshold (1.00%)
+ n1: 91380 0x10070F035: reallocf (in /usr/lib/system/libsystem_c.dylib)
+  n1: 91380 0x1007132E3: _Read_RuneMagi (in /usr/lib/system/libsystem_c.dylib)
+   n1: 91380 0x1006E1CDC: __setrunelocale (in /usr/lib/system/libsystem_c.dylib)
+    n1: 91380 0x1006E21E0: __wrap_setrunelocale (in /usr/lib/system/libsystem_c.dylib)
+     n1: 91380 0x1006E1A9E: loadlocale (in /usr/lib/system/libsystem_c.dylib)
+      n1: 91380 0x1006E178E: setlocale (in /usr/lib/system/libsystem_c.dylib)
+       n1: 91380 0x1002272D4: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+        n0: 91380 0x100003EF2: main (in /usr/local/bin/convert)
+ n1: 85968 0x1009A5304: _memdup_internal (in /usr/lib/libobjc.A.dylib)
+  n1: 85968 0x1009A5195: fixupMethodList(method_list_t*, bool, bool) (in /usr/lib/libobjc.A.dylib)
+   n2: 85968 0x1009B5D4F: attachMethodLists(objc_class*, method_list_t**, int, bool, bool, bool) (in /usr/lib/libobjc.A.dylib)
+    n1: 62768 0x1009B0545: realizeClass(objc_class*) (in /usr/lib/libobjc.A.dylib)
+     n0: 62768 in 6 places, all below massif's threshold (1.00%)
+    n0: 23200 in 1 place, below massif's threshold (1.00%)
+ n1: 75936 0x10002FFD6: GetColorCompliance (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n1: 75936 0x100032195: QueryMagickColorCompliance (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 75936 0x100031D51: QueryColorCompliance (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 75936 0x10022FE30: MogrifyImageInfo (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+     n1: 75936 0x10022E685: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+      n1: 75936 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+       n1: 75936 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+        n1: 75936 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n0: 75936 0x100003EF2: main (in /usr/local/bin/convert)
+ n2: 67632 0x1009A0EA2: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
+  n1: 65552 0x1009A0185: _read_images (in /usr/lib/libobjc.A.dylib)
+   n1: 65552 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+    n1: 65552 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+     n1: 65552 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+      n1: 65552 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+       n1: 65552 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+        n1: 65552 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+         n1: 65552 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 65552 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 65552 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 65552 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 65552 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 65552 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 65552 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 65552 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 65552 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 65552 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 65552 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 65552 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                     n1: 65552 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                      n1: 65552 0x22: ???
+                       n1: 65552 0x104805881: ???
+                        n1: 65552 0x104805889: ???
+                         n1: 65552 0x1048058A8: ???
+                          n1: 65552 0x1048058B0: ???
+                           n1: 65552 0x1048058B9: ???
+                            n1: 65552 0x1048058C1: ???
+                             n1: 65552 0x1048058D4: ???
+                              n0: 65552 0x1048058DF: ???
+  n0: 2080 in 5 places, all below massif's threshold (1.00%)
+ n1: 67168 0x1000B03F9: AcquireImageInfo (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n0: 67168 in 2 places, all below massif's threshold (1.00%)
+#-----------
+snapshot=50
+#-----------
+time=5027912350
+mem_heap_B=5062687
+mem_heap_extra_B=52953
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=51
+#-----------
+time=5027943044
+mem_heap_B=5062319
+mem_heap_extra_B=52841
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=52
+#-----------
+time=5027973838
+mem_heap_B=5095167
+mem_heap_extra_B=52985
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=53
+#-----------
+time=5028006034
+mem_heap_B=5097351
+mem_heap_extra_B=52817
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=54
+#-----------
+time=5028043745
+mem_heap_B=5130087
+mem_heap_extra_B=52817
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=55
+#-----------
+time=5028080573
+mem_heap_B=7810343
+mem_heap_extra_B=52977
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=56
+#-----------
+time=5131164713
+mem_heap_B=6928919
+mem_heap_extra_B=52969
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=57
+#-----------
+time=5131196046
+mem_heap_B=1513331
+mem_heap_extra_B=51485
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=58
+#-----------
+time=5131226970
+mem_heap_B=1042435
+mem_heap_extra_B=46565
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=59
+#-----------
+time=5131257671
+mem_heap_B=1014419
+mem_heap_extra_B=42685
+mem_stacks_B=0
+heap_tree=detailed
+n13: 1014419 (heap allocation functions) malloc/new/new[], --alloc-fns, etc.
+ n1: 530480 0x1009A1F93: _NXMapRehash(_NXMapTable*) (in /usr/lib/libobjc.A.dylib)
+  n2: 530480 0x1009A1CA7: NXMapInsert (in /usr/lib/libobjc.A.dylib)
+   n2: 524304 0x1009B804F: __sel_registerName(char const*, int, int) (in /usr/lib/libobjc.A.dylib)
+    n1: 524304 0x1009A05CD: _read_images (in /usr/lib/libobjc.A.dylib)
+     n1: 524304 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+      n1: 524304 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+       n1: 524304 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+        n1: 524304 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+         n1: 524304 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+          n1: 524304 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+           n1: 524304 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+            n1: 524304 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+             n1: 524304 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+              n1: 524304 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+               n1: 524304 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+                n1: 524304 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 524304 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                  n1: 524304 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                   n1: 524304 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                    n1: 524304 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                     n1: 524304 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                      n1: 524304 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                       n1: 524304 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                        n1: 524304 0x22: ???
+                         n1: 524304 0x104805881: ???
+                          n1: 524304 0x104805889: ???
+                           n1: 524304 0x1048058A8: ???
+                            n1: 524304 0x1048058B0: ???
+                             n1: 524304 0x1048058B9: ???
+                              n0: 524304 0x1048058C1: ???
+    n0: 0 in 4 places, all below massif's threshold (1.00%)
+   n0: 6176 in 3 places, all below massif's threshold (1.00%)
+ n1: 91380 0x10070F035: reallocf (in /usr/lib/system/libsystem_c.dylib)
+  n1: 91380 0x1007132E3: _Read_RuneMagi (in /usr/lib/system/libsystem_c.dylib)
+   n1: 91380 0x1006E1CDC: __setrunelocale (in /usr/lib/system/libsystem_c.dylib)
+    n1: 91380 0x1006E21E0: __wrap_setrunelocale (in /usr/lib/system/libsystem_c.dylib)
+     n1: 91380 0x1006E1A9E: loadlocale (in /usr/lib/system/libsystem_c.dylib)
+      n1: 91380 0x1006E178E: setlocale (in /usr/lib/system/libsystem_c.dylib)
+       n1: 91380 0x1002272D4: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+        n0: 91380 0x100003EF2: main (in /usr/local/bin/convert)
+ n1: 85968 0x1009A5304: _memdup_internal (in /usr/lib/libobjc.A.dylib)
+  n1: 85968 0x1009A5195: fixupMethodList(method_list_t*, bool, bool) (in /usr/lib/libobjc.A.dylib)
+   n2: 85968 0x1009B5D4F: attachMethodLists(objc_class*, method_list_t**, int, bool, bool, bool) (in /usr/lib/libobjc.A.dylib)
+    n3: 62768 0x1009B0545: realizeClass(objc_class*) (in /usr/lib/libobjc.A.dylib)
+     n1: 26616 0x1009A438C: look_up_class (in /usr/lib/libobjc.A.dylib)
+      n0: 26616 in 28 places, all below massif's threshold (1.00%)
+     n2: 21640 0x1009AFB52: realizeClass(objc_class*) (in /usr/lib/libobjc.A.dylib)
+      n1: 14576 0x1009A438C: look_up_class (in /usr/lib/libobjc.A.dylib)
+       n0: 14576 in 8 places, all below massif's threshold (1.00%)
+      n0: 7064 in 4 places, all below massif's threshold (1.00%)
+     n0: 14512 in 4 places, all below massif's threshold (1.00%)
+    n2: 23200 0x1009B66BB: attachCategoryMethods(objc_class*, category_list*, bool) (in /usr/lib/libobjc.A.dylib)
+     n1: 16560 0x1009B058D: realizeClass(objc_class*) (in /usr/lib/libobjc.A.dylib)
+      n0: 16560 in 3 places, all below massif's threshold (1.00%)
+     n0: 6640 in 1 place, below massif's threshold (1.00%)
+ n0: 85783 in 140 places, all below massif's threshold (1.00%)
+ n2: 67632 0x1009A0EA2: NXCreateMapTableFromZone (in /usr/lib/libobjc.A.dylib)
+  n1: 65552 0x1009A0185: _read_images (in /usr/lib/libobjc.A.dylib)
+   n1: 65552 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+    n1: 65552 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+     n1: 65552 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+      n1: 65552 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+       n1: 65552 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+        n1: 65552 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+         n1: 65552 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 65552 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+           n1: 65552 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+            n1: 65552 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 65552 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+              n1: 65552 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 65552 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 65552 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                 n1: 65552 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                  n1: 65552 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                   n1: 65552 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                    n1: 65552 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                     n1: 65552 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                      n1: 65552 0x22: ???
+                       n1: 65552 0x104805881: ???
+                        n1: 65552 0x104805889: ???
+                         n1: 65552 0x1048058A8: ???
+                          n1: 65552 0x1048058B0: ???
+                           n1: 65552 0x1048058B9: ???
+                            n1: 65552 0x1048058C1: ???
+                             n1: 65552 0x1048058D4: ???
+                              n0: 65552 0x1048058DF: ???
+  n0: 2080 in 5 places, all below massif's threshold (1.00%)
+ n1: 52080 0x10002FFD6: GetColorCompliance (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+  n1: 52080 0x100032195: QueryMagickColorCompliance (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+   n1: 52080 0x100031D51: QueryColorCompliance (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+    n1: 52080 0x10022FE30: MogrifyImageInfo (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+     n1: 52080 0x10022E685: MogrifyImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+      n1: 52080 0x100262D35: MogrifyImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+       n1: 52080 0x1001C811D: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+        n1: 52080 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n0: 52080 0x100003EF2: main (in /usr/local/bin/convert)
+ n1: 20104 0x100959121: _xpc_malloc (in /usr/lib/system/libxpc.dylib)
+  n2: 20104 0x100958FF9: _xpc_dictionary_insert (in /usr/lib/system/libxpc.dylib)
+   n2: 19737 0x10095BEB3: xpc_dictionary_set_uint64 (in /usr/lib/system/libxpc.dylib)
+    n2: 19737 0x10095EE11: _xpc_dyld_image_callback (in /usr/lib/system/libxpc.dylib)
+     n1: 10750 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+      n1: 10750 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+       n1: 10750 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+        n1: 10750 0x10096CD74: _xpc_collect_images (in /usr/lib/system/libxpc.dylib)
+         n1: 10750 0x100958BDF: _libxpc_initializer (in /usr/lib/system/libxpc.dylib)
+          n1: 10750 0x10050BAA3: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 10750 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 10750 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 10750 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 10750 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 10750 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 10750 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 10750 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 10750 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 10750 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                    n1: 10750 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                     n1: 10750 0x22: ???
+                      n1: 10750 0x104805881: ???
+                       n1: 10750 0x104805889: ???
+                        n1: 10750 0x1048058A8: ???
+                         n1: 10750 0x1048058B0: ???
+                          n1: 10750 0x1048058B9: ???
+                           n1: 10750 0x1048058C1: ???
+                            n1: 10750 0x1048058D4: ???
+                             n1: 10750 0x1048058DF: ???
+                              n0: 10750 0x1048058E3: ???
+     n0: 8987 in 1 place, below massif's threshold (1.00%)
+    n0: 0 in 5 places, all below massif's threshold (1.00%)
+   n0: 367 in 5 places, all below massif's threshold (1.00%)
+ n1: 16512 0x1009AFABE: realizeClass(objc_class*) (in /usr/lib/libobjc.A.dylib)
+  n0: 16512 in 6 places, all below massif's threshold (1.00%)
+ n1: 16352 0x1009A10D2: NXCreateHashTableFromZone (in /usr/lib/libobjc.A.dylib)
+  n0: 16352 in 3 places, all below massif's threshold (1.00%)
+ n1: 15576 0x1009A0905: _read_images (in /usr/lib/libobjc.A.dylib)
+  n1: 15576 0x10099F445: map_images_nolock (in /usr/lib/libobjc.A.dylib)
+   n1: 15576 0x10099EEC7: map_images (in /usr/lib/libobjc.A.dylib)
+    n1: 15576 0x7FFF5FC0498D: dyld::notifyBatchPartial(dyld_image_states, bool, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+     n1: 15576 0x7FFF5FC046D5: dyld::registerImageStateBatchChangeHandler(dyld_image_states, char const* (*)(dyld_image_states, unsigned int, dyld_image_info const*)) (in /usr/lib/dyld)
+      n1: 15576 0x100656957: dyld_register_image_state_change_handler (in /usr/lib/system/libdyld.dylib)
+       n1: 15576 0x10099EA52: _objc_init (in /usr/lib/libobjc.A.dylib)
+        n1: 15576 0x10060687B: _os_object_init (in /usr/lib/system/libdispatch.dylib)
+         n1: 15576 0x100606863: libdispatch_init (in /usr/lib/system/libdispatch.dylib)
+          n1: 15576 0x10050BA9E: libSystem_initializer (in /usr/lib/libSystem.B.dylib)
+           n1: 15576 0x7FFF5FC12CE9: ImageLoaderMachO::doModInitFunctions(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+            n1: 15576 0x7FFF5FC12E76: ImageLoaderMachO::doInitialization(ImageLoader::LinkContext const&) (in /usr/lib/dyld)
+             n1: 15576 0x7FFF5FC0F86F: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+              n1: 15576 0x7FFF5FC0F804: ImageLoader::recursiveInitialization(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+               n1: 15576 0x7FFF5FC0F6F6: ImageLoader::processInitializers(ImageLoader::LinkContext const&, unsigned int, ImageLoader::InitializerTimingList&, ImageLoader::UninitedUpwards&) (in /usr/lib/dyld)
+                n1: 15576 0x7FFF5FC0F967: ImageLoader::runInitializers(ImageLoader::LinkContext const&, ImageLoader::InitializerTimingList&) (in /usr/lib/dyld)
+                 n1: 15576 0x7FFF5FC02228: dyld::initializeMainExecutable() (in /usr/lib/dyld)
+                  n1: 15576 0x7FFF5FC05BDF: dyld::_main(macho_header const*, unsigned long, int, char const**, char const**, char const**, unsigned long*) (in /usr/lib/dyld)
+                   n1: 15576 0x7FFF5FC01274: dyldbootstrap::start(macho_header const*, int, char const**, long, macho_header const*, unsigned long*) (in /usr/lib/dyld)
+                    n1: 15576 0x7FFF5FC01034: _dyld_start (in /usr/lib/dyld)
+                     n1: 15576 0x22: ???
+                      n1: 15576 0x104805881: ???
+                       n1: 15576 0x104805889: ???
+                        n1: 15576 0x1048058A8: ???
+                         n1: 15576 0x1048058B0: ???
+                          n1: 15576 0x1048058B9: ???
+                           n1: 15576 0x1048058C1: ???
+                            n1: 15576 0x1048058D4: ???
+                             n1: 15576 0x1048058DF: ???
+                              n0: 15576 0x1048058E3: ???
+ n1: 10936 0x1009A2C10: class_createInstance (in /usr/lib/libobjc.A.dylib)
+  n0: 10936 in 5 places, all below massif's threshold (1.00%)
+ n1: 10808 0x100701937: gmtsub (in /usr/lib/system/libsystem_c.dylib)
+  n1: 10808 0x1002BD0D6: cmsCreateProfilePlaceholder (in /usr/local/Cellar/little-cms2/2.6/lib/liblcms2.2.dylib)
+   n1: 10808 0x1002BDBF4: cmsOpenProfileFromMemTHR (in /usr/local/Cellar/little-cms2/2.6/lib/liblcms2.2.dylib)
+    n1: 10808 0x1000E4CF9: GetImageProperty (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 10808 0x1000EB637: SetImageProfileInternal (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 10808 0x10895C724: ???
+       n1: 10808 0x108976F08: ???
+        n1: 10808 0x1089758B4: ???
+         n1: 10808 0x10896F252: ???
+          n1: 10808 0x10896F198: ???
+           n1: 10808 0x10895853E: ???
+            n1: 10808 0x10004B9BB: ReadImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+             n1: 10808 0x10004C800: ReadImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+              n1: 10808 0x1001C55D7: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+               n1: 10808 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+                n0: 10808 0x100003EF2: main (in /usr/local/bin/convert)
+ n1: 10808 0x10070066F: tzsetwall_basic (in /usr/lib/system/libsystem_c.dylib)
+  n1: 10808 0x10070087E: _st_tzset_basic (in /usr/lib/system/libsystem_c.dylib)
+   n1: 10808 0x10070200D: localtime_r (in /usr/lib/system/libsystem_c.dylib)
+    n1: 10808 0x100132E34: FormatMagickTime (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+     n1: 10808 0x10004C306: ReadImage (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+      n1: 10808 0x10004C800: ReadImages (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickCore-6.Q16.2.dylib)
+       n1: 10808 0x1001C55D7: ConvertImageCommand (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+        n1: 10808 0x100227446: MagickCommandGenesis (in /usr/local/Cellar/imagemagick/6.8.9-8/lib/libMagickWand-6.Q16.2.dylib)
+         n0: 10808 0x100003EF2: main (in /usr/local/bin/convert)
+#-----------
+snapshot=60
+#-----------
+time=5131288375
+mem_heap_B=973859
+mem_heap_extra_B=37621
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=61
+#-----------
+time=5131319140
+mem_heap_B=942121
+mem_heap_extra_B=32687
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=62
+#-----------
+time=5131447973
+mem_heap_B=942192
+mem_heap_extra_B=32752
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=63
+#-----------
+time=5131478678
+mem_heap_B=933756
+mem_heap_extra_B=29132
+mem_stacks_B=0
+heap_tree=empty
+#-----------
+snapshot=64
+#-----------
+time=5131509404
+mem_heap_B=923547
+mem_heap_extra_B=25181
+mem_stacks_B=0
+heap_tree=empty

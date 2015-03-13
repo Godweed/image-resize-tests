@@ -1,0 +1,11 @@
+desc: (none)
+cmd: mogrify -path default-mogrify/600 -filter Triangle -define filter:support=2.0 -thumbnail 600 -unsharp 0.25x0.25+8.00+0.065 -dither None -posterize 136 -background Black -alpha Background -quality 82 -define jpeg:fancy-upsampling=off -define png:compression-filter=5 -define png:compression-level=9 -define png:compression-strategy=1 -define png:exclude-chunk=all -interlace none -colorspace sRGB -strip ../assets-unoptimized/1B-3.png ../assets-unoptimized/1C-1.png ../assets-unoptimized/1C-2.png ../assets-unoptimized/1C-3.png ../assets-unoptimized/2C-1.png ../assets-unoptimized/2C-2.png ../assets-unoptimized/2C-3.png ../assets-unoptimized/3A-2.png ../assets-unoptimized/3C-1.png ../assets-unoptimized/3C-2.png ../assets-unoptimized/3C-3.png ../assets-unoptimized/4A-1.png ../assets-unoptimized/4A-3.png ../assets-unoptimized/4B-1.png ../assets-unoptimized/4B-3.png ../assets-unoptimized/4C-1.png ../assets-unoptimized/4C-2.png ../assets-unoptimized/4C-3.png
+time_unit: i
+#-----------
+snapshot=0
+#-----------
+time=0
+mem_heap_B=0
+mem_heap_extra_B=0
+mem_stacks_B=0
+heap_tree=empty
