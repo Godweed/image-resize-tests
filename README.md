@@ -5,5 +5,4 @@
 
 ## TODO
 
-* Mess about with sharpening more
 * Tests with GraphicsMagick (and maybe) GD
